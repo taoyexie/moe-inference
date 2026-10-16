@@ -1,0 +1,71 @@
+{
+  "output": "D:\\moe inference\\reports\\KITE专利技术交底书_待补实验数据.docx",
+  "paragraphs": 97,
+  "tables": 2,
+  "figures": 2,
+  "text_chars": 10257,
+  "preserved_parts": [
+    {
+      "part": "_rels/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "part": "_rels/.rels",
+      "bytes": 737,
+      "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+    },
+    {
+      "part": "docProps/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "part": "docProps/app.xml",
+      "bytes": 532,
+      "sha256": "81cec5ca2dbad39d7d7eac7b7995044981a02f66527fe95f13d7eaa222460f47"
+    },
+    {
+      "part": "docProps/custom.xml",
+      "bytes": 529,
+      "sha256": "f7f7c1f037cc20e0e3b025ff2afe26fb9273d2c2cc8939e134535c8cb3385523"
+    },
+    {
+      "part": "word/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "part": "word/_rels/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "part": "word/fontTable.xml",
+      "bytes": 4165,
+      "sha256": "160621235277ee86ebd4deb595cf3c68c7f33a0de9cf3d91ca4cb7939ebe452c"
+    },
+    {
+      "part": "word/settings.xml",
+      "bytes": 2692,
+      "sha256": "d3a3970510daaf83349237dcb04481bbc7c0fb2f347db4aa1178428d72c9b2fa"
+    },
+    {
+      "part": "word/styles.xml",
+      "bytes": 35441,
+      "sha256": "f1bf34ab6bcdb3225488c744eee704db9967339203e7e395893cba29d3fab144"
+    },
+    {
+      "part": "word/theme/",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "part": "word/theme/theme1.xml",
+      "bytes": 7046,
+      "sha256": "bea0a0590dea0ed9e97fa4391c1b7980640249387153014388eaaa628837b32c"
+    }
+  ],
+  "source_sha256": "43ccfd509278626e93f8b5f693dd7248228b6a7c95b7ad907230c7f937e569fe",
+  "rendering": "Word export and bundled Poppler after packaged renderer unavailable"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_files": 31,
+  "standalone_tests": 81,
+  "formal_v2_files_byte_identical": 27,
+  "zip_sha256": "caed4d6c03df5c19e8af8a1feb8a28fe1eade15318dfa9905b231f8c867f95e2",
+  "zip_bytes": 112237,
+  "extracted": "D:\\moe inference\\tmp\\numerics-verify-5zvdezo8\\kite-numerics-20261016-v1",
+  "scope": "Local syntax/bookkeeping/mock tests; CUDA diagnosis not yet run"
+}

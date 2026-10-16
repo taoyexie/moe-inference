@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "document": "D:/moe inference/reports/KITE专利技术交底书_终稿.docx",
+  "document_sha256": "457c4e4dd25526f33f45732b1529af5fb8e208cb93fd6792817716b14bb13e6d",
+  "renderer": "Canonical documents render_docx.py rasterizer with read-only native Microsoft Word PDF conversion because Windows runtime does not bundle LibreOffice",
+  "render_directory": "D:/moe inference/tmp/patent_final_20261016/final_render_v1",
+  "page_count": 16,
+  "pages_visually_reviewed": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+  "image_quality": "All 5 figures present; original 2 system diagrams retained; 3 experimental charts match the first-version PNG hashes",
+  "layout": "No clipped or overlapping content; table header repeats across pages 9 and 10; captions remain with their images; all Chinese and chart glyphs readable",
+  "content": "Experimental placeholder replaced, audited 6/7 GiB results and settings inserted, technical benefits updated; one paired measurement per configuration correctly described",
+  "metadata_fields": "Contact name, telephone and email left blank for the user",
+  "source_preserved": true,
+  "unrequested_render_intermediates_not_delivered": true
+}

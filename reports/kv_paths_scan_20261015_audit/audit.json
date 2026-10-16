@@ -1,0 +1,182 @@
+{
+  "audit_status": "passed",
+  "input_folder": "D:\\moe inference\\results\\kv-paths-20261015T073909Z-9c2f736c",
+  "file_sha256": {
+    "context-1024-reference.json": "90cd57b98485c5350b5ce644dd151d269340602bd169c0c0262eed83b08634f8",
+    "context-1024-source.safetensors": "b6f3c980330df84d73cdf14f297a8757efb17689d0c12d54fc12d0b341fbc00f",
+    "context-128-reference.json": "b36b3baf9dc792ba3c95fe91913bfae4abbcb7a53b12d2c88d4919ccd4ab4075",
+    "context-128-source.safetensors": "a14d909476281cffa986a1e3209a4b20dac4bf455df854abfc2e57c6e92c6123",
+    "context-2048-reference.json": "c4824dab6c83d07ba265f4600d6b20ea999d792fea6019ca979c6ce3091b3b04",
+    "context-2048-source.safetensors": "a36b7200abc2ddcb8d603f1d75559c036f80e994c833ae0a19f3be049b784cc9",
+    "context-256-reference.json": "9bc4c549f08dd9a524c95a4fa618815db29a77be20c660ff0aa35c2e0c19689e",
+    "context-256-source.safetensors": "9f9ca8d9d55103f9143838acb5d4ae36ef1e1a1cf08500d0a36463568e691077",
+    "context-512-reference.json": "fba56be3feeba9e36c536dbc66a873f69f8382939e297fb7056accd245e86631",
+    "context-512-source.safetensors": "2c6d299b4c3c099e785050f550a0c22b2d9a5a2e43719ab8928b7980a30c034f",
+    "device_map.json": "1611b4ffb30137356f3133e6fffe2da7ec8252919d0c4c33224d7dc3107730fb",
+    "inputs.json": "d03aa9afca3462554600a6bc53340c57831046bef53894474a1ed5f5d5d91919",
+    "loading_info.json": "a133dac4370b8c4579cf4d84ca70ef43205c16fb9790f2c67bce095b6879a341",
+    "model_config.json": "b3969ef2efbf64594540094e2209c690d36510cf2b64680c6f6d009d42eff484",
+    "raw.jsonl": "9ce019e403719e711c0a3126b41eb5f8f088807258fdd31adbb3e340e643cc14",
+    "resources_after_load.json": "2b05c7fbfc1d4a7f111c6dd6505ec7cf1f3487f35c344376f6a40ffe2098a3db",
+    "resources_before.json": "24a8cb295170c62a2f878eb80192e5c7d657c7742f5c48784dec815550cf4689",
+    "summary.json": "ca93705f38467910669b64a205bab5c22738786d64229775a02d5999a6e2e502"
+  },
+  "model_content_manifest_sha256": "1208a85873f530e25a62558a182fd28d8f95e594b24c0ae3cb3b609ddffcf6d8",
+  "record_count": 70,
+  "measured_count": 50,
+  "warmup_count": 20,
+  "max_logged_errors": {
+    "relative_l2": 0.0,
+    "max_abs": 0.0,
+    "normalized_max_abs": 0.0
+  },
+  "warmup_per_point": 2,
+  "repeats_per_point": 5,
+  "object": {
+    "shape": [
+      48,
+      2,
+      1,
+      4,
+      128,
+      128
+    ],
+    "dtype": "torch.bfloat16",
+    "bytes": 12582912,
+    "layer_count": 48,
+    "kv_heads": 4,
+    "head_dim": 128,
+    "block_tokens": 128,
+    "layout": "layer,K_or_V,batch,kv_head,token,head_dim",
+    "semantics": "one fixed all-layer KV block, NOT one whole context"
+  },
+  "cpu_threads": 8,
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "gpu_idle_at_start": true,
+  "cuda_peak_allocated_gib": 22.969584941864014,
+  "cuda_peak_reserved_gib": 23.072265625,
+  "gpu_weight_layer_count": 19,
+  "cpu_weight_layer_count": 29,
+  "points": [
+    {
+      "context_tokens": 128,
+      "timings": {
+        "restore": {
+          "n": 5,
+          "median_ms": 0.66863,
+          "p10_ms": 0.665508,
+          "p90_ms": 0.6717563999999999,
+          "mean_ms": 0.6686158
+        },
+        "recompute": {
+          "n": 5,
+          "median_ms": 9973.348935,
+          "p10_ms": 9639.0455174,
+          "p90_ms": 10441.9575942,
+          "mean_ms": 10012.9255218
+        }
+      },
+      "reference_creation_ms_not_a_trial": 9754.413258,
+      "source_sha256": "a14d909476281cffa986a1e3209a4b20dac4bf455df854abfc2e57c6e92c6123"
+    },
+    {
+      "context_tokens": 256,
+      "timings": {
+        "restore": {
+          "n": 5,
+          "median_ms": 0.666656,
+          "p10_ms": 0.6637578,
+          "p90_ms": 0.6678664,
+          "mean_ms": 0.6659916
+        },
+        "recompute": {
+          "n": 5,
+          "median_ms": 8704.32048,
+          "p10_ms": 8697.1722348,
+          "p90_ms": 8782.9719278,
+          "mean_ms": 8731.266409
+        }
+      },
+      "reference_creation_ms_not_a_trial": 8718.758354,
+      "source_sha256": "9f9ca8d9d55103f9143838acb5d4ae36ef1e1a1cf08500d0a36463568e691077"
+    },
+    {
+      "context_tokens": 512,
+      "timings": {
+        "restore": {
+          "n": 5,
+          "median_ms": 0.667053,
+          "p10_ms": 0.6649222,
+          "p90_ms": 0.6719998,
+          "mean_ms": 0.6679956
+        },
+        "recompute": {
+          "n": 5,
+          "median_ms": 9909.653085,
+          "p10_ms": 9770.4385386,
+          "p90_ms": 10326.850202200001,
+          "mean_ms": 10013.9009016
+        }
+      },
+      "reference_creation_ms_not_a_trial": 10106.06593,
+      "source_sha256": "2c6d299b4c3c099e785050f550a0c22b2d9a5a2e43719ab8928b7980a30c034f"
+    },
+    {
+      "context_tokens": 1024,
+      "timings": {
+        "restore": {
+          "n": 5,
+          "median_ms": 0.668867,
+          "p10_ms": 0.6651998,
+          "p90_ms": 0.6711376,
+          "mean_ms": 0.6683898
+        },
+        "recompute": {
+          "n": 5,
+          "median_ms": 8889.482953,
+          "p10_ms": 8834.9846404,
+          "p90_ms": 9743.887362200001,
+          "mean_ms": 9197.610757
+        }
+      },
+      "reference_creation_ms_not_a_trial": 8843.569958,
+      "source_sha256": "b6f3c980330df84d73cdf14f297a8757efb17689d0c12d54fc12d0b341fbc00f"
+    },
+    {
+      "context_tokens": 2048,
+      "timings": {
+        "restore": {
+          "n": 5,
+          "median_ms": 0.667997,
+          "p10_ms": 0.665212,
+          "p90_ms": 0.6684762,
+          "mean_ms": 0.6672278
+        },
+        "recompute": {
+          "n": 5,
+          "median_ms": 9266.07112,
+          "p10_ms": 9186.6411792,
+          "p90_ms": 9326.6189006,
+          "mean_ms": 9256.858074400001
+        }
+      },
+      "reference_creation_ms_not_a_trial": 91602.572153,
+      "source_sha256": "a36b7200abc2ddcb8d603f1d75559c036f80e994c833ae0a19f3be049b784cc9"
+    }
+  ],
+  "limits": [
+    "Correctness metrics are remotely logged checks, not local re-execution of the model.",
+    "Checkpoint weights are not downloaded; only recorded checkpoint identity is checked.",
+    "Two contexts in one session do not establish linearity or allocator gains.",
+    "Prefix replay cost is shared across rebuilt blocks, not additive for each miss."
+  ]
+}

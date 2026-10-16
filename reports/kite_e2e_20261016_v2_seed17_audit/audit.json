@@ -1,0 +1,78 @@
+[
+  {
+    "status": "passed",
+    "run": "D:\\moe inference\\results\\search-20261016T031244Z-33110a14",
+    "command": "search",
+    "seed": 17,
+    "comparisons": [
+      {
+        "budget_mib": 512,
+        "baseline_ms": 66534.252499,
+        "kite_ms": 77169.609217,
+        "speedup": 0.8621820581196217,
+        "reduction": -0.15984784255537932,
+        "output_ids_identical": false,
+        "baseline_startup_ms": 28371.052611,
+        "kite_startup_ms": 27846.409307
+      },
+      {
+        "budget_mib": 1024,
+        "baseline_ms": 65659.505647,
+        "kite_ms": 76811.921442,
+        "speedup": 0.854808790281062,
+        "reduction": -0.16985226564083278,
+        "output_ids_identical": true,
+        "baseline_startup_ms": 27949.929317,
+        "kite_startup_ms": 28194.486104
+      },
+      {
+        "budget_mib": 2048,
+        "baseline_ms": 65475.938971,
+        "kite_ms": 81163.459974,
+        "speedup": 0.8067169511005894,
+        "reduction": -0.239592150178223,
+        "output_ids_identical": false,
+        "baseline_startup_ms": 28196.786204,
+        "kite_startup_ms": 28101.347433
+      }
+    ],
+    "scope": "measured complete-model controlled workload including startup; not original WiSP or natural service traffic",
+    "raw_sha256": {
+      "1024-baseline\\batches.jsonl": "fda04c462bc874c46923210ac0909d23ed817cad4be7e8e1df7e6878b3b58e0d",
+      "1024-baseline\\calibration.json": "a4649e628643c171b2beb107a2b1c179917465c8f4389c39a1e6c9a177d87e61",
+      "1024-baseline\\performance.json": "5543e4ed983003cba32441b6769c1d7527b806cc41970115053c2d9e82edc293",
+      "1024-baseline\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "1024-baseline\\requests.json": "d2e0aeafbc24330ed47986d070554bb47202f72435bf8360dd0441bbf8831655",
+      "1024-kite\\batches.jsonl": "5fafc349707dd0dc98983b059dada53bcf4180d139960d1e441385f54ba13fc3",
+      "1024-kite\\calibration.json": "b94d3d759755d009b574db0661d8a40d4ee4f5543fd47a3a231366bbc0e1c5a6",
+      "1024-kite\\performance.json": "3c631b378dc0691ae89b226534da1df04cdd5176cef84e62f17c1b68251ac1a3",
+      "1024-kite\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "1024-kite\\requests.json": "273bc2a1e5bdebfd5126c95679e5151d5efaa24182bcdacb671cabfe86b286d1",
+      "2048-baseline\\batches.jsonl": "e4b40306bead06104ec7f5bca09d30c808460f119bcb04d1083f01d9d81e81f4",
+      "2048-baseline\\calibration.json": "fe8f9af5f0c28b6a23517c17425d28cbcb78af6f9a3c1f122df7823133f5434f",
+      "2048-baseline\\performance.json": "d06b86b33db88e3207f7cc2a1cca56bb1b964ec9571de35d7ebf8cca529bdc63",
+      "2048-baseline\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "2048-baseline\\requests.json": "9d696f24cff5e50a2a9beed16460c045078ac960a5b92645c760c82356b3e7de",
+      "2048-kite\\batches.jsonl": "d7b39e509e0ab5f94778268141772398d2c00d05093946f0875e3017d9c00311",
+      "2048-kite\\calibration.json": "43bbf4940951647ad54e75fc73c4666c1d00fb8a6ba071ac6751a89315fe6610",
+      "2048-kite\\performance.json": "c646fb8c5ed234e4e15bf4ca5e2a1eea9bff99486efdec11b00cb3a025f978d8",
+      "2048-kite\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "2048-kite\\requests.json": "41adf2c336ee46086504a9e6ef36b18fce0170c44c742e37b9e35f33eb1813c3",
+      "512-baseline\\batches.jsonl": "820a20ac0259170382fdf1af3f15d995693afc56fa761a289d0456181376946f",
+      "512-baseline\\calibration.json": "3358833201b1dfb34c1bee4b89d983c9b219e93f7cacd681c2f8c9675cfa23f5",
+      "512-baseline\\performance.json": "8ea9528ffd1bfd04a3508831e7f3b382138ecc92427a842874e7f75701783de8",
+      "512-baseline\\recoveries.json": "48ae7a6418cff77b909d8b1c498d222ec56cde35649e324edaec4f2daeabd87f",
+      "512-baseline\\requests.json": "7b14f8bed904832cc69ddc8b99db50731e6f160a2b03e1607bcd47cb0c074ecf",
+      "512-kite\\batches.jsonl": "7ec3957990cc2938aa705edaf4a2a9a7777e9f5bc83c1bc22d8636fc8f0f1230",
+      "512-kite\\calibration.json": "9e9e712d4cd2cfd93eaa1846b0014f9eded8f2493625898d66ad4f7ba77f86c9",
+      "512-kite\\performance.json": "1b198b46b2eeb4c4987addeb9373aef57f30feb74135437a986550506778267d",
+      "512-kite\\recoveries.json": "4c810eed23b4b79a3153c131c3b5426854e79e9a4407e5db72eca92d5e657cec",
+      "512-kite\\requests.json": "99c58da2a17a578a6c64b2e77a1ec10a920dd245fe3e29b685d40793705b0232",
+      "resource_monitor.json": "abffcd5b5545c2845aba9d514fa33be735bc03a23573720e11c571fa2a4f497c",
+      "selection.json": "36708389722a215b2a231e94acfad2947e3baa021016fd61e6299b237104d0f3",
+      "summary.json": "a9da807e1296f7bbc06434f50c7efe4c0dbb0947168fdc3656ffe4621d71ab85",
+      "validation.json": "5622f261daa800a5895d5b11483717ad3ee4eb971aa93ff29ccc722b528be5a6",
+      "workload.json": "89ba153eedbcc62c0f76f0fe96cd730d5e9a9684ccf8b792d594aecdc7446805"
+    }
+  }
+]

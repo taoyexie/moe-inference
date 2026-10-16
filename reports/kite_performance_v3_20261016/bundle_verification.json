@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source_files": 29,
+  "standalone_tests": 82,
+  "zip_sha256": "e89c1108e109b3e9ba46a76917cf842ef214e05a2561bb81eb5f3308b7266712",
+  "zip_bytes": 107734,
+  "extracted": "D:\\moe inference\\tmp\\advantage-v3-verify-f4z2cp7i\\kite-advantage-20261016-v3",
+  "scope": "local control-flow/cache tests, no new numerical experiment; v3 E2E not yet measured"
+}

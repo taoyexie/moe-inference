@@ -1,0 +1,113 @@
+{
+  "audit_status": "passed",
+  "input_folder": "D:\\moe inference\\results\\kv-paths-20261015T065043Z-8e308811",
+  "file_sha256": {
+    "context-256-reference.json": "16c0019a226c7e72b57f6ee4c5b8658cc799091307a10bd66b5020422c714e7c",
+    "context-256-source.safetensors": "9f9ca8d9d55103f9143838acb5d4ae36ef1e1a1cf08500d0a36463568e691077",
+    "context-512-reference.json": "605f5ec148a779418572a5d09661a31bc1ef77c682651b28cdd33f91861e01b8",
+    "context-512-source.safetensors": "2c6d299b4c3c099e785050f550a0c22b2d9a5a2e43719ab8928b7980a30c034f",
+    "device_map.json": "1611b4ffb30137356f3133e6fffe2da7ec8252919d0c4c33224d7dc3107730fb",
+    "inputs.json": "2ac2a39a38081e5fbbfa8ced2c097c1a364fa17fb3cb0caed3234d4de6952794",
+    "loading_info.json": "a133dac4370b8c4579cf4d84ca70ef43205c16fb9790f2c67bce095b6879a341",
+    "model_config.json": "b3969ef2efbf64594540094e2209c690d36510cf2b64680c6f6d009d42eff484",
+    "raw.jsonl": "944ce5db5ac77f143b040fb95df869f1c67c5a0efcf359730f6618c800e0a209",
+    "resources_after_load.json": "6e38ac934fc13ddb3aca43368b9d32d199f5e237c4672d653a9abb17c20a497f",
+    "resources_before.json": "743943662f0b7577dcda28ad98ee6aef0dc4a2fa6048ba7a14cd5e168997558e",
+    "summary.json": "aeccfe8c691d31988e607ff8356241cdc21df23cd0d15ac590b91435ecee7a94"
+  },
+  "model_content_manifest_sha256": "1208a85873f530e25a62558a182fd28d8f95e594b24c0ae3cb3b609ddffcf6d8",
+  "record_count": 16,
+  "measured_count": 12,
+  "warmup_count": 4,
+  "max_logged_errors": {
+    "relative_l2": 0.0,
+    "max_abs": 0.0,
+    "normalized_max_abs": 0.0
+  },
+  "warmup_per_point": 1,
+  "repeats_per_point": 3,
+  "object": {
+    "shape": [
+      48,
+      2,
+      1,
+      4,
+      128,
+      128
+    ],
+    "dtype": "torch.bfloat16",
+    "bytes": 12582912,
+    "layer_count": 48,
+    "kv_heads": 4,
+    "head_dim": 128,
+    "block_tokens": 128,
+    "layout": "layer,K_or_V,batch,kv_head,token,head_dim",
+    "semantics": "one fixed all-layer KV block, NOT one whole context"
+  },
+  "cpu_threads": 8,
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "gpu_idle_at_start": true,
+  "cuda_peak_allocated_gib": 22.757136344909668,
+  "cuda_peak_reserved_gib": 22.830078125,
+  "gpu_weight_layer_count": 19,
+  "cpu_weight_layer_count": 29,
+  "points": [
+    {
+      "context_tokens": 256,
+      "timings": {
+        "restore": {
+          "n": 3,
+          "median_ms": 0.684436,
+          "p10_ms": 0.6834888,
+          "p90_ms": 0.6886304000000001,
+          "mean_ms": 0.6857890000000001
+        },
+        "recompute": {
+          "n": 3,
+          "median_ms": 8998.893968,
+          "p10_ms": 8901.7715496,
+          "p90_ms": 9027.790871199999,
+          "mean_ms": 8970.46667
+        }
+      },
+      "reference_creation_ms_not_a_trial": 105144.492708,
+      "source_sha256": "9f9ca8d9d55103f9143838acb5d4ae36ef1e1a1cf08500d0a36463568e691077"
+    },
+    {
+      "context_tokens": 512,
+      "timings": {
+        "restore": {
+          "n": 3,
+          "median_ms": 0.683249,
+          "p10_ms": 0.6830874,
+          "p90_ms": 0.6840562,
+          "mean_ms": 0.683518
+        },
+        "recompute": {
+          "n": 3,
+          "median_ms": 10046.729284,
+          "p10_ms": 9910.5686872,
+          "p90_ms": 10094.673632,
+          "mean_ms": 10009.972513666666
+        }
+      },
+      "reference_creation_ms_not_a_trial": 9857.228183,
+      "source_sha256": "2c6d299b4c3c099e785050f550a0c22b2d9a5a2e43719ab8928b7980a30c034f"
+    }
+  ],
+  "limits": [
+    "Correctness metrics are remotely logged checks, not local re-execution of the model.",
+    "Checkpoint weights are not downloaded; only recorded checkpoint identity is checked.",
+    "Two contexts in one session do not establish linearity or allocator gains.",
+    "Prefix replay cost is shared across rebuilt blocks, not additive for each miss."
+  ]
+}

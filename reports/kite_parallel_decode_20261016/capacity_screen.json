@@ -1,0 +1,676 @@
+{
+  "scope": "conditional admit-on-access LRU capacity replay of existing real accesses; NOT actual KITE misses, future trace, or E2E speedup",
+  "source_run": "D:\\moe inference\\results\\kv-shock-search-20261016T120121Z-edf45a48",
+  "assumptions": [
+    "fixed conditional history proposal within each segment",
+    "empty reference caches at each segment start",
+    "CPU bypass not simulated",
+    "do not transfer these numerical miss counts to different prompt/context inputs"
+  ],
+  "source_sha256": {
+    "8192-baseline\\batches.jsonl": "3829303c18f56f183a4a058c2654f5eaa14deb4b69f4836d79f5ee98a35d3eda",
+    "8192-kite\\batches.jsonl": "54044e15be68b7e66a2617e9bf51d0adbecf83c4e3f9773ae4d882bcafcdfc87"
+  },
+  "rows": [
+    {
+      "source": "baseline",
+      "budget_mib": 6144,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 341,
+            "kv_objects": 256,
+            "expert_bytes": 3218079744,
+            "kv_bytes": 3221225472,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14805
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 170,
+            "kv_objects": 384,
+            "expert_bytes": 1604321280,
+            "kv_bytes": 4831838208,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13818,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 6144,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 614,
+            "kv_objects": 51,
+            "expert_bytes": 5794430976,
+            "kv_bytes": 641728512,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14931
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 341,
+            "kv_objects": 256,
+            "expert_bytes": 3218079744,
+            "kv_bytes": 3221225472,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14805
+        }
+      },
+      "kv_reference_misses_avoided": 126,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 7168,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 398,
+            "kv_objects": 298,
+            "expert_bytes": 3755999232,
+            "kv_bytes": 3749707776,
+            "slack_bytes": 9437184
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14805
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 199,
+            "kv_objects": 448,
+            "expert_bytes": 1877999616,
+            "kv_bytes": 5637144576,
+            "slack_bytes": 0
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13818,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 7168,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 716,
+            "kv_objects": 60,
+            "expert_bytes": 6757023744,
+            "kv_bytes": 754974720,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14931
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 398,
+            "kv_objects": 298,
+            "expert_bytes": 3755999232,
+            "kv_bytes": 3749707776,
+            "slack_bytes": 9437184
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14805
+        }
+      },
+      "kv_reference_misses_avoided": 126,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 8192,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 455,
+            "kv_objects": 341,
+            "expert_bytes": 4293918720,
+            "kv_bytes": 4290772992,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 227,
+            "kv_objects": 512,
+            "expert_bytes": 2142240768,
+            "kv_bytes": 6442450944,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 0,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 8192,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 819,
+            "kv_objects": 68,
+            "expert_bytes": 7729053696,
+            "kv_bytes": 855638016,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 14889
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 455,
+            "kv_objects": 341,
+            "expert_bytes": 4293918720,
+            "kv_bytes": 4290772992,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13902,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 10240,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 568,
+            "kv_objects": 427,
+            "expert_bytes": 5360320512,
+            "kv_bytes": 5372903424,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 284,
+            "kv_objects": 640,
+            "expert_bytes": 2680160256,
+            "kv_bytes": 8053063680,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 0,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 10240,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 1023,
+            "kv_objects": 86,
+            "expert_bytes": 9654239232,
+            "kv_bytes": 1082130432,
+            "slack_bytes": 0
+          },
+          "expert_reference_misses": 44147,
+          "kv_reference_misses": 14889
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 568,
+            "kv_objects": 427,
+            "expert_bytes": 5360320512,
+            "kv_bytes": 5372903424,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13902,
+      "extra_expert_reference_misses": 4325
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 12288,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 682,
+            "kv_objects": 512,
+            "expert_bytes": 6436159488,
+            "kv_bytes": 6442450944,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 341,
+            "kv_objects": 768,
+            "expert_bytes": 3218079744,
+            "kv_bytes": 9663676416,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 0,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "baseline",
+      "budget_mib": 12288,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 1228,
+            "kv_objects": 103,
+            "expert_bytes": 11588861952,
+            "kv_bytes": 1296039936,
+            "slack_bytes": 0
+          },
+          "expert_reference_misses": 20138,
+          "kv_reference_misses": 14889
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 682,
+            "kv_objects": 512,
+            "expert_bytes": 6436159488,
+            "kv_bytes": 6442450944,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48472,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13902,
+      "extra_expert_reference_misses": 28334
+    },
+    {
+      "source": "kite",
+      "budget_mib": 6144,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 341,
+            "kv_objects": 256,
+            "expert_bytes": 3218079744,
+            "kv_bytes": 3221225472,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14805
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 170,
+            "kv_objects": 384,
+            "expert_bytes": 1604321280,
+            "kv_bytes": 4831838208,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13818,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 6144,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 614,
+            "kv_objects": 51,
+            "expert_bytes": 5794430976,
+            "kv_bytes": 641728512,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14931
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 341,
+            "kv_objects": 256,
+            "expert_bytes": 3218079744,
+            "kv_bytes": 3221225472,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14805
+        }
+      },
+      "kv_reference_misses_avoided": 126,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 7168,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 398,
+            "kv_objects": 298,
+            "expert_bytes": 3755999232,
+            "kv_bytes": 3749707776,
+            "slack_bytes": 9437184
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14805
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 199,
+            "kv_objects": 448,
+            "expert_bytes": 1877999616,
+            "kv_bytes": 5637144576,
+            "slack_bytes": 0
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13818,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 7168,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 716,
+            "kv_objects": 60,
+            "expert_bytes": 6757023744,
+            "kv_bytes": 754974720,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14931
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 398,
+            "kv_objects": 298,
+            "expert_bytes": 3755999232,
+            "kv_bytes": 3749707776,
+            "slack_bytes": 9437184
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14805
+        }
+      },
+      "kv_reference_misses_avoided": 126,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 8192,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 455,
+            "kv_objects": 341,
+            "expert_bytes": 4293918720,
+            "kv_bytes": 4290772992,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 227,
+            "kv_objects": 512,
+            "expert_bytes": 2142240768,
+            "kv_bytes": 6442450944,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 0,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 8192,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 819,
+            "kv_objects": 68,
+            "expert_bytes": 7729053696,
+            "kv_bytes": 855638016,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 14889
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 455,
+            "kv_objects": 341,
+            "expert_bytes": 4293918720,
+            "kv_bytes": 4290772992,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13902,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 10240,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 568,
+            "kv_objects": 427,
+            "expert_bytes": 5360320512,
+            "kv_bytes": 5372903424,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 284,
+            "kv_objects": 640,
+            "expert_bytes": 2680160256,
+            "kv_bytes": 8053063680,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 0,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 10240,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 1023,
+            "kv_objects": 86,
+            "expert_bytes": 9654239232,
+            "kv_bytes": 1082130432,
+            "slack_bytes": 0
+          },
+          "expert_reference_misses": 44687,
+          "kv_reference_misses": 14889
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 568,
+            "kv_objects": 427,
+            "expert_bytes": 5360320512,
+            "kv_bytes": 5372903424,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13902,
+      "extra_expert_reference_misses": 4003
+    },
+    {
+      "source": "kite",
+      "budget_mib": 12288,
+      "conditional_history_fraction": 0.5,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 682,
+            "kv_objects": 512,
+            "expert_bytes": 6436159488,
+            "kv_bytes": 6442450944,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 341,
+            "kv_objects": 768,
+            "expert_bytes": 3218079744,
+            "kv_bytes": 9663676416,
+            "slack_bytes": 3145728
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 0,
+      "extra_expert_reference_misses": 0
+    },
+    {
+      "source": "kite",
+      "budget_mib": 12288,
+      "conditional_history_fraction": 0.9,
+      "segments": 3,
+      "decode_batches": 45,
+      "policies": {
+        "baseline": {
+          "candidate": {
+            "expert_objects": 1228,
+            "kv_objects": 103,
+            "expert_bytes": 11588861952,
+            "kv_bytes": 1296039936,
+            "slack_bytes": 0
+          },
+          "expert_reference_misses": 19828,
+          "kv_reference_misses": 14889
+        },
+        "kite": {
+          "candidate": {
+            "expert_objects": 682,
+            "kv_objects": 512,
+            "expert_bytes": 6436159488,
+            "kv_bytes": 6442450944,
+            "slack_bytes": 6291456
+          },
+          "expert_reference_misses": 48690,
+          "kv_reference_misses": 987
+        }
+      },
+      "kv_reference_misses_avoided": 13902,
+      "extra_expert_reference_misses": 28862
+    }
+  ]
+}

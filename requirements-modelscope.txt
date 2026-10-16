@@ -1,0 +1,2 @@
+# Optional downloader, additional to the unchanged requirements-qwen.txt.
+modelscope==1.25.0

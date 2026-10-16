@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "run": "D:\\moe inference\\results\\prefill-burst-search-20261016T124129Z-e0088d2f",
+  "command": "search",
+  "seed": 17,
+  "cases": [
+    {
+      "case_name": "repeat-20",
+      "budget_mib": 32768,
+      "baseline_ms": 40943.851506,
+      "kite_ms": 38340.083082,
+      "speedup": 1.0679124356207361,
+      "reduction": 0.0635936368521276,
+      "main_baseline_ms": 14041.260316,
+      "main_kite_ms": 13916.895744,
+      "output_tokens": 16,
+      "expert_counts": {
+        "baseline": {
+          "expert_calls": 42072,
+          "expert_misses": 4639,
+          "expert_upload": 4639,
+          "expert_hits": 37433
+        },
+        "kite": {
+          "expert_calls": 42090,
+          "expert_misses": 4690,
+          "expert_cpu": 94,
+          "cpu_fp32_cache_hits": 94,
+          "expert_upload": 4596,
+          "expert_hits": 37400
+        }
+      },
+      "kv_counts": {
+        "baseline": {
+          "split_evictions": 0
+        },
+        "kite": {
+          "split_evictions": 0
+        }
+      }
+    },
+    {
+      "case_name": "repeat-short",
+      "budget_mib": 28672,
+      "baseline_ms": 35230.191731,
+      "kite_ms": 35786.419926,
+      "speedup": 0.9844570036301428,
+      "reduction": -0.01578839534133336,
+      "main_baseline_ms": 13081.613788,
+      "main_kite_ms": 13153.722596,
+      "output_tokens": 16,
+      "expert_counts": {
+        "kite": {
+          "expert_calls": 37641,
+          "expert_misses": 4501,
+          "expert_cpu": 77,
+          "cpu_fp32_cache_hits": 77,
+          "expert_upload": 4424,
+          "expert_hits": 33140
+        },
+        "baseline": {
+          "expert_calls": 37701,
+          "expert_misses": 4394,
+          "expert_upload": 4394,
+          "expert_hits": 33307
+        }
+      },
+      "kv_counts": {
+        "kite": {
+          "split_evictions": 0
+        },
+        "baseline": {
+          "split_evictions": 0
+        }
+      }
+    }
+  ],
+  "accuracy_certified": false,
+  "scope": "prefill-only one-token completion bursts; not decode-heavy or natural online traffic",
+  "raw_sha256": {
+    "gpu_monitor_startup.json": "c8f9bba95c13cd66e481ba4d830183129a7982f303bb67b3740b7a69afad84ec",
+    "readiness.json": "723efaa5ef3391c8e16025d11d9b3b7b651cc152bb98b5cbc2972dd9100239a5",
+    "repeat-20-32768-baseline\\batches.jsonl": "0d8d746e0411eba90dc584eec30736cf8804f74bcb1b987e40d19acb8c3840be",
+    "repeat-20-32768-baseline\\calibration.json": "b66a57d523d472918eaf0559161be5bb4fd28223e4679eb620833e616a8e1323",
+    "repeat-20-32768-baseline\\performance.json": "2239e5e8c912b2ee7098c20ccf86a0abc0110b508c4f3706f17363b25e196133",
+    "repeat-20-32768-baseline\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "repeat-20-32768-baseline\\requests.json": "ce7c576f9477518b82918ed369c114a1fc5966b4e44a514333d86cc985b07180",
+    "repeat-20-32768-kite\\batches.jsonl": "b63b6943323505d4c50367895b911b3023ef0edafb074b211beb1a037f0fbf81",
+    "repeat-20-32768-kite\\calibration.json": "380a1ddb5f36c8cde09151bed4c3b56213e232ffffd0690014f1a532de6391a6",
+    "repeat-20-32768-kite\\performance.json": "329e051ef0a9fe43fa758e3e2127e2a120b6f393c38476bcb3694c2717970db5",
+    "repeat-20-32768-kite\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "repeat-20-32768-kite\\requests.json": "c46269f116886cb0f66a1a10ca47f6f4d49d783f347dddde2474bf0cef8edc4f",
+    "repeat-short-28672-baseline\\batches.jsonl": "cde299e87880cd7b12c13d2f7d0d34e826723795c397ff1e8c26b69938fb0c2b",
+    "repeat-short-28672-baseline\\calibration.json": "95539e4c338b7b275fa3b71bf7aeed5320ffc2b2c76785102e566772a7fda467",
+    "repeat-short-28672-baseline\\performance.json": "4787e73675a46d8aa80948fe734e509a212b8c02b85d92e6dff3df0e15fd8778",
+    "repeat-short-28672-baseline\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "repeat-short-28672-baseline\\requests.json": "9b072939b8b3d26ba6a93f6966a1bc97cf0a36ef65a5ece58ac27f5b85b3e1b6",
+    "repeat-short-28672-kite\\batches.jsonl": "e8ab4d6637a9286b20a1f6a3e6059f4897f7a2a809d39b0f987ee8d71cf902a7",
+    "repeat-short-28672-kite\\calibration.json": "58c9d9c55bdd440ce372710773bfb08d1caf5dbee7e1bf5931f6f29c5b6ac1a2",
+    "repeat-short-28672-kite\\performance.json": "bc6c6e3e4aa6539ab488cad9a4843d4257b6f805ff98ff2699cd3d23e99d454d",
+    "repeat-short-28672-kite\\recoveries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "repeat-short-28672-kite\\requests.json": "0d896e5517e1481e7772629bc2c1b961fba3addaa70de694980342d33f9772f5",
+    "resource_monitor.json": "122b0f45e78fc7bbed1354de895ffb28bb547392ec0c6faefd9713cd37fde557",
+    "selection.json": "6040380db3aa1eb17ee951ace5d787a331fdecec0ad1c3f427d00a52325e3bc1",
+    "structural_screen.json": "d0f481f54edd573534a91dc0b13b509894207894dd42c77f2452f513533a8e71",
+    "summary.json": "377389a0f43a128a0a0bbc7eb58ea7cc6a0b31614b4a86d9bc60dd07bf98ad7d",
+    "validation.json": "f0426c8d1f77e13a483cbb2bd7bcffb12f25df0557d42d12574b67359dddd6d0",
+    "workload.json": "09bef6cea3bf5d9b8c7284be629027ff37a981d62e1a7113ae442bd5625aa5ec"
+  }
+}

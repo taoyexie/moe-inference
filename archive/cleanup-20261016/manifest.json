@@ -1,0 +1,804 @@
+{
+  "version": 1,
+  "workspace": "D:\\moe inference",
+  "archive": "archive\\cleanup-20261016",
+  "operation": "recoverable archive only",
+  "status": "complete",
+  "script_keep": [
+    "audit_kite_e2e.py",
+    "audit_kite_parallel_decode.py",
+    "expert_paths.py",
+    "kite_advantage.py",
+    "kite_controller.py",
+    "kite_e2e.py",
+    "kite_e2e_core.py",
+    "kite_e2e_runtime.py",
+    "kite_e2e_torch.py",
+    "kite_parallel_decode.py",
+    "kite_readiness.py",
+    "kite_trace.py",
+    "multi_trace.py",
+    "package_kite_parallel_decode.py",
+    "plot_kite_parallel_results.py",
+    "qwen_smoke.py",
+    "screen_kite_parallel_decode.py",
+    "workload_baseline.py"
+  ],
+  "test_keep": [
+    "test_expert_paths.py",
+    "test_kite_advantage.py",
+    "test_kite_controller.py",
+    "test_kite_e2e_core.py",
+    "test_kite_e2e_dispatch.py",
+    "test_kite_e2e_driver.py",
+    "test_kite_e2e_layout.py",
+    "test_kite_parallel_decode.py",
+    "test_kite_parallel_decode_driver.py",
+    "test_kite_parallel_freeze.py",
+    "test_kite_performance_scope.py",
+    "test_kite_readiness.py",
+    "test_kite_trace.py",
+    "test_multi_trace.py",
+    "test_workload_baseline.py"
+  ],
+  "before": {
+    "scripts": 54,
+    "packages": 18,
+    "tests": 29
+  },
+  "runtime_hashes_before": [
+    {
+      "path": "scripts\\audit_kite_e2e.py",
+      "sha256": "c46dbe43ca286ce485454c9e8a60e54cea92c4829bd3eff54b343feb6d66ff84"
+    },
+    {
+      "path": "scripts\\audit_kite_parallel_decode.py",
+      "sha256": "a5e192978bd8a91abb7baa3306296e597742b27d35e50e1791f95cf122595369"
+    },
+    {
+      "path": "scripts\\expert_paths.py",
+      "sha256": "ab48db6b8d5836de0ac030d60f37f99a05c6a6ab208fe29ac22603fc9996aa81"
+    },
+    {
+      "path": "scripts\\kite_advantage.py",
+      "sha256": "ed985ffdb45c287b3b9d0237a8eefc8b56ce4748350db06717fd3841a7e42d28"
+    },
+    {
+      "path": "scripts\\kite_controller.py",
+      "sha256": "734d5a0cfb5f9e60492f8540fe46b5a1d3b3dc3ba02d7282de2416766ec43124"
+    },
+    {
+      "path": "scripts\\kite_e2e.py",
+      "sha256": "44c2436ac036e534fbbcd9b233ce93ae26f6eec8a5314e5c294fcf69ceaa435c"
+    },
+    {
+      "path": "scripts\\kite_e2e_core.py",
+      "sha256": "43c8c95268f1847b01c90cc2a5973bc5455f7b00b210bbf466b6e71710e9fd5a"
+    },
+    {
+      "path": "scripts\\kite_e2e_runtime.py",
+      "sha256": "afebd5a6bfff5d414600cc65c188b8dfc10d2ff1337cc9e6d766661f70a96430"
+    },
+    {
+      "path": "scripts\\kite_e2e_torch.py",
+      "sha256": "59bf11e0642e9796ceb76fbda762151c53740a81a576c85b5afac1437011e419"
+    },
+    {
+      "path": "scripts\\kite_parallel_decode.py",
+      "sha256": "a9400913c8025de893e5e57b4302737240e7af7a2c0aaa20ceaf57e1c22103b7"
+    },
+    {
+      "path": "scripts\\kite_readiness.py",
+      "sha256": "0010ebf3c81080ed71c5836bd65ac41ac36bd06c3ba6982aeacf64db7fdd5393"
+    },
+    {
+      "path": "scripts\\kite_trace.py",
+      "sha256": "85c2da9f0d26451781f19546566a9d1a4741df41cf460ae0344df9785599ddd5"
+    },
+    {
+      "path": "scripts\\multi_trace.py",
+      "sha256": "a076098e8bb8da692427d7d19b5c9994469c04bd99cbc98087d496c44c3ccfce"
+    },
+    {
+      "path": "scripts\\package_kite_parallel_decode.py",
+      "sha256": "b4f01585b6d06e8c34b04da0acde1ffc9373c92e4a69002b7b582169ea5042f7"
+    },
+    {
+      "path": "scripts\\plot_kite_parallel_results.py",
+      "sha256": "50eab52ae9b108eb8603deb757650a1b6054f1fcabc8e34cf9fb3dfec5c5a6bc"
+    },
+    {
+      "path": "scripts\\qwen_smoke.py",
+      "sha256": "618d0bb33398262f630eef783b9079f1a0e24cc6fb62671b55526a7be083577a"
+    },
+    {
+      "path": "scripts\\screen_kite_parallel_decode.py",
+      "sha256": "963ad823b9259f7dfa15a41ae8ef0a5cdb1176a66b49bbeb938da89e79a69e03"
+    },
+    {
+      "path": "scripts\\workload_baseline.py",
+      "sha256": "414852397f722d70e1a348c32b39d5eda36a2ac818269a4902b0b3c30668e5f7"
+    }
+  ],
+  "records": [
+    {
+      "source": "scripts\\analyze_expert_paths.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\analyze_expert_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 11805,
+      "fingerprint": "0c8e747de7a9f77fbd5e7bf78279fe9b4432e5466392ee29137c91b7b07ac7f9"
+    },
+    {
+      "source": "scripts\\analyze_kv_paths.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\analyze_kv_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 13400,
+      "fingerprint": "5f894cb7c79fa2e66a14718022c7af2e9f77c12dbedb967fe78e1c5e43fdef8d"
+    },
+    {
+      "source": "scripts\\analyze_qwen_smoke.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\analyze_qwen_smoke.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 14910,
+      "fingerprint": "f9ececd9816b2161f521a90f88c2967def646bb4773f0e00cf959366299c9660"
+    },
+    {
+      "source": "scripts\\audit_expert_cache_bench.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\audit_expert_cache_bench.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 13630,
+      "fingerprint": "ef4a0fb986ccf5d2bfcd12722d1a95c95ba5faa44745c29d0ee303b374cf0ac7"
+    },
+    {
+      "source": "scripts\\audit_expert_cache.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\audit_expert_cache.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 8789,
+      "fingerprint": "3dbb06e7e5e3942339a69bff3eae2787ed03b66419aca84f0f5ab155012ec27c"
+    },
+    {
+      "source": "scripts\\audit_kite_advantage.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\audit_kite_advantage.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 6287,
+      "fingerprint": "eae52e2dd7b238237b6cc87af554872e08030b1af1e66041495888ab0fc746ef"
+    },
+    {
+      "source": "scripts\\audit_kite_burst_search.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\audit_kite_burst_search.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 6621,
+      "fingerprint": "c5ad5364d4bef0745631820fb041ab28840461b015c16db8b7aa89845b4757a0"
+    },
+    {
+      "source": "scripts\\audit_workload_baseline.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\audit_workload_baseline.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 12932,
+      "fingerprint": "0a9f6c5e7761c12c32b48490a7c362ebd80b670d92f237a36950b3565e47697e"
+    },
+    {
+      "source": "scripts\\diagnose_kite_e2e.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\diagnose_kite_e2e.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 14380,
+      "fingerprint": "0600b96b43e935485a9f21003f0443532ad34b552efa789fae79ed608b23de0e"
+    },
+    {
+      "source": "scripts\\expert_cache_bench.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\expert_cache_bench.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 10508,
+      "fingerprint": "449bde79ddf34b61c8a32b4fc529361aa4fef3c00e6cecb81aebb36a4a804cdb"
+    },
+    {
+      "source": "scripts\\expert_cache_smoke.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\expert_cache_smoke.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 16289,
+      "fingerprint": "8d05ff9fd66531ea2b24b508181e860f5e03dfbb4643f6c2982f3c38f3612586"
+    },
+    {
+      "source": "scripts\\expert_cache.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\expert_cache.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 6854,
+      "fingerprint": "54a271932bd9e1adccf1b65d2dfddadea25d1f43b2d122c6248ac500a6dfcb13"
+    },
+    {
+      "source": "scripts\\finalize_kite_patent.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\finalize_kite_patent.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 16716,
+      "fingerprint": "2c560ee364cf6d5e8c7a724d4aa153cc82a274c08d0973ba33bb0f54a62e0bb7"
+    },
+    {
+      "source": "scripts\\first_layer_probe.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\first_layer_probe.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 13314,
+      "fingerprint": "5905649176b8ba29304ccf12220ee28cbb278d8cb79f4625e21e347bddd0141b"
+    },
+    {
+      "source": "scripts\\kite_burst_search.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\kite_burst_search.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 12711,
+      "fingerprint": "f27f1fab31590957f719b2e1c44098e4fb27e60a3444b27b8f869e0feb3b1770"
+    },
+    {
+      "source": "scripts\\kite_numerical_diagnostic.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\kite_numerical_diagnostic.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 13069,
+      "fingerprint": "13a4fe13fa26c95d0c05bca6f002df97b4b7d751ef525761aa218c3eff6d1434"
+    },
+    {
+      "source": "scripts\\kv_paths.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\kv_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 14766,
+      "fingerprint": "8271bf530a68a7413e53fb1c127a344f9053b8a99ed028774ce0a6e0775b4579"
+    },
+    {
+      "source": "scripts\\numerical_probe.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\numerical_probe.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 3640,
+      "fingerprint": "153a6b4e78ba2996409c5627425cc34ca75d06f45d2db2214ba57b63580ecfe7"
+    },
+    {
+      "source": "scripts\\package_expert_cache_bench.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_expert_cache_bench.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1493,
+      "fingerprint": "e216d17d35fe8ed898e423a2dcfda3533ecf7108a0666e6709c1e470733bdb15"
+    },
+    {
+      "source": "scripts\\package_expert_cache.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_expert_cache.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1460,
+      "fingerprint": "23e17e967b73ecb4a1077d59c5006651e5ca00d77eba3a376cb0dea7718e208a"
+    },
+    {
+      "source": "scripts\\package_expert_paths.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_expert_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1141,
+      "fingerprint": "dd78a425a7be13021c2f1bbd483dd142e9fc1f00091779b9d5da72dbaabb3ed2"
+    },
+    {
+      "source": "scripts\\package_kite_advantage.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_kite_advantage.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1899,
+      "fingerprint": "e5ee6c8530938efcc02cc6a9549d2d1cf1589363785827d785b7fcf17f241df9"
+    },
+    {
+      "source": "scripts\\package_kite_burst_search.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_kite_burst_search.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1090,
+      "fingerprint": "e8cff35e1abe2a6569f9cd66960fe54680e7c624a990ede741236086f37d8ed4"
+    },
+    {
+      "source": "scripts\\package_kite_e2e.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_kite_e2e.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1640,
+      "fingerprint": "5852eb28762d98166c5c950bf6f1155c03387a78adfc4bca0b6f4ec921160cca"
+    },
+    {
+      "source": "scripts\\package_kite_numerics.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_kite_numerics.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1118,
+      "fingerprint": "84846e3503b58f724e08e8c4fde9e37ae59617909cf927ddad1f56c71a83572a"
+    },
+    {
+      "source": "scripts\\package_kv_paths.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_kv_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1260,
+      "fingerprint": "5e5af8440772cea2ca26ccee297fcc797322e4e09fe5b6654a34c318dfc355e2"
+    },
+    {
+      "source": "scripts\\package_multi_trace.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_multi_trace.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1213,
+      "fingerprint": "35e3294a6587fb1f865bb9a52e60c51400d5fb23a76bd7616bdaefd8de42cb42"
+    },
+    {
+      "source": "scripts\\package_projection_probe.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_projection_probe.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1065,
+      "fingerprint": "9bd023ea87be1746c3c8b23da229ab0abd6f45fca5eb38559bce69b6fe1330da"
+    },
+    {
+      "source": "scripts\\package_smoke.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_smoke.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1128,
+      "fingerprint": "d8322711e55c737395a352c402baf3e06e854daf3c9b74117c04eabac4eb5df7"
+    },
+    {
+      "source": "scripts\\package_workload_baseline.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\package_workload_baseline.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1408,
+      "fingerprint": "9f990c433f1be8b43ef4a5ca1167d6538b736eadb34baf3c9c4f66ad9d07f6d4"
+    },
+    {
+      "source": "scripts\\render_docx_word_windows.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\render_docx_word_windows.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2252,
+      "fingerprint": "7c8bf4f6fd35ebeb3565eea705de829a81cf8b901c90e04aa2f80767ae7c1422"
+    },
+    {
+      "source": "scripts\\render_word_pdf.ps1",
+      "destination": "archive\\cleanup-20261016\\scripts\\render_word_pdf.ps1",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 911,
+      "fingerprint": "cdfb054f851114b1ecbe890a3209110e4ac7f62f8211141f893059816864ed05"
+    },
+    {
+      "source": "scripts\\summarize_expert_models.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\summarize_expert_models.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 17612,
+      "fingerprint": "48eb5b8183ab6be273dc542d580a30c7cbcf6ca8f4de1fffc517a379a92f621a"
+    },
+    {
+      "source": "scripts\\summarize_kv_models.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\summarize_kv_models.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 7172,
+      "fingerprint": "6b2e31012336d85d4a74f8f553b411767f8a149ef1d15600ed77ff7c7151a50a"
+    },
+    {
+      "source": "scripts\\update_patent_baseline.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\update_patent_baseline.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 6071,
+      "fingerprint": "662ab855373f3d9f7c11bbb2bb55c365e86735db1c07c03923f40c89fad95f9a"
+    },
+    {
+      "source": "scripts\\update_patent_wisp_comparison.py",
+      "destination": "archive\\cleanup-20261016\\scripts\\update_patent_wisp_comparison.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 6340,
+      "fingerprint": "308d8c60ecf70a7a80298a33101974e01c22967252eeb457fc3226714e759384"
+    },
+    {
+      "source": "tests\\test_analyze_kv_paths.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_analyze_kv_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1556,
+      "fingerprint": "a866613a24145ae590856e5f45e49460f4b14baffb1df8dcc5a755c88d02ad2d"
+    },
+    {
+      "source": "tests\\test_audit_expert_cache_bench.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_audit_expert_cache_bench.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2306,
+      "fingerprint": "988731eb269cf252b4bda8dad6ff70586135950ad8c06aea5abc9ab1e2ebda66"
+    },
+    {
+      "source": "tests\\test_audit_kite_single_token.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_audit_kite_single_token.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1598,
+      "fingerprint": "fda9868ed5e71c1f437923f62cac97f1f6c2b195cf39d624171e3ea5f5e2edb8"
+    },
+    {
+      "source": "tests\\test_audit_workload_baseline.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_audit_workload_baseline.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2406,
+      "fingerprint": "dfb9cb824a5bfc29dcd59145ff9f0b3ad8f57760c93e96a5464c5a2fae46810c"
+    },
+    {
+      "source": "tests\\test_diagnose_kite_e2e.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_diagnose_kite_e2e.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2950,
+      "fingerprint": "7b88627dbc769d6ee44ddd78abc288b2d31761becc0b1430c7ba59faba92d7ee"
+    },
+    {
+      "source": "tests\\test_expert_cache_bench.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_expert_cache_bench.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 3071,
+      "fingerprint": "01b853f91d3f71cf2cead2ecf75e8516e26124d4faef2864f4a0de0ad031c9dc"
+    },
+    {
+      "source": "tests\\test_expert_cache_smoke.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_expert_cache_smoke.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 4376,
+      "fingerprint": "a58ad457095565d6f3a8c506d46f621408fe2c38861a223e70c4e12ec4e7af1a"
+    },
+    {
+      "source": "tests\\test_expert_cache.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_expert_cache.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 4836,
+      "fingerprint": "2450a74ade9317af994fa95db83de2a2552a9c724f7ceaa027d4b3e336ea2f75"
+    },
+    {
+      "source": "tests\\test_expert_models.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_expert_models.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2068,
+      "fingerprint": "14b566f93c1be874b4bd7731d60213d8bed9d9efa972a48b23a3ed6d598dfe8f"
+    },
+    {
+      "source": "tests\\test_first_layer_probe.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_first_layer_probe.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2501,
+      "fingerprint": "99d0f3698888093c90e59215d82f64d79284ccee76880420ce1302985da15a47"
+    },
+    {
+      "source": "tests\\test_kite_burst_search.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_kite_burst_search.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 3432,
+      "fingerprint": "576c7fe870e067ed7bb8a1fbd88de971f93735aa1dedc0224f925088fa649f5f"
+    },
+    {
+      "source": "tests\\test_kite_numerical_diagnostic.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_kite_numerical_diagnostic.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 3482,
+      "fingerprint": "77cfd32a9ddeadf9b012cd2fc3d0c75c1d61f0ba6c0cfb4995d389e4f3d492f2"
+    },
+    {
+      "source": "tests\\test_kv_models.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_kv_models.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 1648,
+      "fingerprint": "13a7f7c4d9e470756bfa474549a28c6347591d6b70e1113f11331270c9050ae2"
+    },
+    {
+      "source": "tests\\test_kv_paths.py",
+      "destination": "archive\\cleanup-20261016\\tests\\test_kv_paths.py",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 2707,
+      "fingerprint": "03e8e60cedd5527330ccc90dd73f0874b287bf3aa8a9e61f465e64b4dd087fdc"
+    },
+    {
+      "source": "dist\\kite-advantage-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-advantage-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 92369,
+      "fingerprint": "c62c6b43e3cfda34a76f5c6ac0df0f681882d24cfc2b202057f94f4352b90484"
+    },
+    {
+      "source": "dist\\kite-advantage-20261016-v2.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-advantage-20261016-v2.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 102259,
+      "fingerprint": "61a9e897d1b982908a739a0fe56e16257eb5356bef2a6356e100b2113254e585"
+    },
+    {
+      "source": "dist\\kite-advantage-20261016-v3.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-advantage-20261016-v3.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 107734,
+      "fingerprint": "9281600048f7702c1e3b0b3e26892fd00589766be4e22f29a23af26b64118e4f"
+    },
+    {
+      "source": "dist\\kite-burst-search-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-burst-search-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 120248,
+      "fingerprint": "4a60221217084cdeb3dbb9984495c3c4cbd1d52ba4f869cae3152245b08357ea"
+    },
+    {
+      "source": "dist\\kite-e2e-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-e2e-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 77802,
+      "fingerprint": "ae15a10e484681657864f59b3fac3f2d0d8d790368153d45ffff9a076b8ca1ed"
+    },
+    {
+      "source": "dist\\kite-e2e-20261016-v2.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-e2e-20261016-v2.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 80285,
+      "fingerprint": "9b7441c20c1b1dce41b064e33fc56446af2e407aa51d015093d9dc0fb656b1a1"
+    },
+    {
+      "source": "dist\\kite-expert-cache-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-expert-cache-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 47494,
+      "fingerprint": "0a828f48d70c95888e05605a639c2ed5ce055cd942fa3cec3f9da96dd3809b04"
+    },
+    {
+      "source": "dist\\kite-expert-cache-bench-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-expert-cache-bench-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 53158,
+      "fingerprint": "186dc1e41dbb94c35c3a58a074ed9bf5397581e504b10b542477118676812cf2"
+    },
+    {
+      "source": "dist\\kite-expert-paths-20261015-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-expert-paths-20261015-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 30402,
+      "fingerprint": "f1302e942e1540b90031aa25551e491f66a3caddd914dbfab90d78f8b6ad28e5"
+    },
+    {
+      "source": "dist\\kite-kv-paths-20261015-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-kv-paths-20261015-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 32254,
+      "fingerprint": "ad731d56170bb1a4d640bb1040d4d99cb0217d09828dd03d27506c159a1306cf"
+    },
+    {
+      "source": "dist\\kite-multi-trace-20261015-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-multi-trace-20261015-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 23520,
+      "fingerprint": "7de85a6a82b8f298ec39c823268b41a1a44aa215d7cc7f111346d2c1fbd7001c"
+    },
+    {
+      "source": "dist\\kite-numerics-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-numerics-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 112237,
+      "fingerprint": "dafaaff58ee81c502cc9a388af9a72fc01aff115a995e8c8364a5508a4e9fdbd"
+    },
+    {
+      "source": "dist\\kite-projection-probe-20261016-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-projection-probe-20261016-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 110721,
+      "fingerprint": "a2ee6c4fba05c74adb22da8384ba276fb9047b29c0addd462e80486372d84cd7"
+    },
+    {
+      "source": "dist\\kite-qwen-smoke-20261014-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-qwen-smoke-20261014-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 17662,
+      "fingerprint": "4509a9d5505d27bc406d2b9a952ee9fda12cbc1bf1bf3343f50f96453f86e701"
+    },
+    {
+      "source": "dist\\kite-qwen-smoke-20261014-v2.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-qwen-smoke-20261014-v2.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 21253,
+      "fingerprint": "5b63f21ceffe65547579e5c8a6bd275cc42e72b1cd64503c8b3317d8456ea758"
+    },
+    {
+      "source": "dist\\kite-qwen-smoke-20261015-v3.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-qwen-smoke-20261015-v3.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 22128,
+      "fingerprint": "7cf236147a4e54553cf960cea9b2f53c397a0a068bad21929f9dbeba934d1dbf"
+    },
+    {
+      "source": "dist\\kite-workload-baseline-20261015-v1.zip",
+      "destination": "archive\\cleanup-20261016\\dist\\kite-workload-baseline-20261015-v1.zip",
+      "kind": "file",
+      "file_count": 1,
+      "bytes": 38988,
+      "fingerprint": "8cb482c79652e94f46c8c0f4b2201a39bc1e881d54d98f5a1d4fb1a17f123c8c"
+    },
+    {
+      "source": "tmp\\advantage-v3-verify-f4z2cp7i",
+      "destination": "archive\\cleanup-20261016\\tmp\\advantage-v3-verify-f4z2cp7i",
+      "kind": "directory",
+      "file_count": 54,
+      "bytes": 774273,
+      "fingerprint": "6d61057c33e4920cdda70dc3c11cf26a40bf57317c891edbb680c9b65d2401f4"
+    },
+    {
+      "source": "tmp\\baseline-bundle-verify",
+      "destination": "archive\\cleanup-20261016\\tmp\\baseline-bundle-verify",
+      "kind": "directory",
+      "file_count": 22,
+      "bytes": 256579,
+      "fingerprint": "72d397a8d288450362c0a3ad0a5be16ce76f9d442f9ba4e51add86bcd944d29e"
+    },
+    {
+      "source": "tmp\\burst-search-verify-vef9tl8w",
+      "destination": "archive\\cleanup-20261016\\tmp\\burst-search-verify-vef9tl8w",
+      "kind": "directory",
+      "file_count": 60,
+      "bytes": 829249,
+      "fingerprint": "cb7fe59fc8f49bfecdd53f596ceb07faeb09d31259fe61ba35aedd6bee26e642"
+    },
+    {
+      "source": "tmp\\expert-cache-bench-bundle-verify",
+      "destination": "archive\\cleanup-20261016\\tmp\\expert-cache-bench-bundle-verify",
+      "kind": "directory",
+      "file_count": 29,
+      "bytes": 390553,
+      "fingerprint": "366a0b1d46db5ac4f502b917fb7eb77e115011b5787f1030620ab766cb4e1363"
+    },
+    {
+      "source": "tmp\\expert-cache-bundle-verify",
+      "destination": "archive\\cleanup-20261016\\tmp\\expert-cache-bundle-verify",
+      "kind": "directory",
+      "file_count": 25,
+      "bytes": 352847,
+      "fingerprint": "a2a656737aa83b0321234b95a990c2c92c1f8a0542de68db27f8a6d4fb96fc1f"
+    },
+    {
+      "source": "tmp\\kite-advantage-v2-verify-4w2nwqfi",
+      "destination": "archive\\cleanup-20261016\\tmp\\kite-advantage-v2-verify-4w2nwqfi",
+      "kind": "directory",
+      "file_count": 51,
+      "bytes": 745609,
+      "fingerprint": "128dd6d1aa5d1e01921e57be82b5eea182e3d9084aab88f230355627811e8b28"
+    },
+    {
+      "source": "tmp\\kite-advantage-v2-verify-ngjl25zk",
+      "destination": "archive\\cleanup-20261016\\tmp\\kite-advantage-v2-verify-ngjl25zk",
+      "kind": "directory",
+      "file_count": 51,
+      "bytes": 745877,
+      "fingerprint": "c3ab608a9113d8be2bf546293ac4674ea300edf4ec62ecc3a3c53765ed3a2cb9"
+    },
+    {
+      "source": "tmp\\kite-advantage-v2-verify-qjeots3_",
+      "destination": "archive\\cleanup-20261016\\tmp\\kite-advantage-v2-verify-qjeots3_",
+      "kind": "directory",
+      "file_count": 51,
+      "bytes": 746223,
+      "fingerprint": "3daf57c5d06751c3c27e24c1cdd40444893519a8f2a85d0b0701056cf693fbf9"
+    },
+    {
+      "source": "tmp\\kite-advantage-verify-whhmhdr3",
+      "destination": "archive\\cleanup-20261016\\tmp\\kite-advantage-verify-whhmhdr3",
+      "kind": "directory",
+      "file_count": 46,
+      "bytes": 685133,
+      "fingerprint": "87a86f1d0fdaf260155e68dd9e788a74ee70615cd182b601034fca2423ae977c"
+    },
+    {
+      "source": "tmp\\kite-e2e-bundle-verify",
+      "destination": "archive\\cleanup-20261016\\tmp\\kite-e2e-bundle-verify",
+      "kind": "directory",
+      "file_count": 41,
+      "bytes": 585044,
+      "fingerprint": "424642a93fe78cd21776b0ecb0d4d5f92241c60974069c6e5f0da566229977ab"
+    },
+    {
+      "source": "tmp\\kite-e2e-v2-verify-zcdh_1e8",
+      "destination": "archive\\cleanup-20261016\\tmp\\kite-e2e-v2-verify-zcdh_1e8",
+      "kind": "directory",
+      "file_count": 41,
+      "bytes": 605470,
+      "fingerprint": "9f453afb949f8d484f6aad37971ee5cf1a702d041827cbf2ce4c6548c5a5f887"
+    },
+    {
+      "source": "tmp\\numerics-verify-5zvdezo8",
+      "destination": "archive\\cleanup-20261016\\tmp\\numerics-verify-5zvdezo8",
+      "kind": "directory",
+      "file_count": 57,
+      "bytes": 799187,
+      "fingerprint": "eb2cf59a988174196209ccd9b897a159c8fee9066174c6192fc186a8254fe955"
+    },
+    {
+      "source": "tmp\\parallel-decode-verify-v1-a247",
+      "destination": "archive\\cleanup-20261016\\tmp\\parallel-decode-verify-v1-a247",
+      "kind": "directory",
+      "file_count": 64,
+      "bytes": 862796,
+      "fingerprint": "7d25bf497442ffb78acf8386f319fcc3869f992a37132123eda2181735292651"
+    },
+    {
+      "source": "tmp\\projection-probe-verify-n9tdc9df",
+      "destination": "archive\\cleanup-20261016\\tmp\\projection-probe-verify-n9tdc9df",
+      "kind": "directory",
+      "file_count": 56,
+      "bytes": 793096,
+      "fingerprint": "116d5b91c8e52867b8023b244a43a9f47c61da1f5601d235243ce39e4eb3ea42"
+    }
+  ],
+  "snapshot": {
+    "path": "archive\\cleanup-20261016\\source-before-cleanup.zip",
+    "sha256": "d265af2325c87e7839291769438e548c3b40d2bef19d3d4efa70be45e81bb346"
+  },
+  "after": {
+    "scripts": 18,
+    "tests": 15,
+    "packages": 2
+  },
+  "verification": {
+    "status": "passed",
+    "only_changed_retained_script": [
+      "scripts\\package_kite_parallel_decode.py"
+    ],
+    "missing_local_dependencies": [],
+    "bundle_files": 39,
+    "bundle_sha256": "034eb4dfd3399e74b3494ee13ad94c3934657823b69b795e6ba43b9fcbeb85d8",
+    "original_result_audit": "passed",
+    "cases": 2,
+    "raw_result_files": 28,
+    "local_tests": {
+      "run": 100,
+      "passed": 100,
+      "gpu_model_loaded": false
+    },
+    "archive_targets_content_verified": 81,
+    "archived_files": 715,
+    "bytes_archived": 10568281,
+    "remote_operations": false,
+    "inference_sources_unchanged": true
+  }
+}

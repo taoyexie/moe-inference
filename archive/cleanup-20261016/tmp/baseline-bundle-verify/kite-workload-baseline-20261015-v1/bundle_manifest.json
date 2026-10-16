@@ -1,0 +1,65 @@
+{
+  "name": "kite-workload-baseline-20261015-v1",
+  "files": [
+    {
+      "path": "requirements-qwen.txt",
+      "bytes": 242,
+      "sha256": "76464037e778bb3ca9145e5545580b594228e02ea11740e0dc0d04b65e8c5288"
+    },
+    {
+      "path": "scripts/kite_trace.py",
+      "bytes": 10772,
+      "sha256": "4baab3c6e83ea7f44560d0fb56b39b918e17dc875ae1a58b2b02d1362b45c3a0"
+    },
+    {
+      "path": "scripts/qwen_smoke.py",
+      "bytes": 32370,
+      "sha256": "618d0bb33398262f630eef783b9079f1a0e24cc6fb62671b55526a7be083577a"
+    },
+    {
+      "path": "scripts/multi_trace.py",
+      "bytes": 7023,
+      "sha256": "a076098e8bb8da692427d7d19b5c9994469c04bd99cbc98087d496c44c3ccfce"
+    },
+    {
+      "path": "scripts/workload_baseline.py",
+      "bytes": 10574,
+      "sha256": "414852397f722d70e1a348c32b39d5eda36a2ac818269a4902b0b3c30668e5f7"
+    },
+    {
+      "path": "scripts/kite_controller.py",
+      "bytes": 13499,
+      "sha256": "4a106526c728eea2e1aada47de4f5b4d26f371acae89c7d941535d433519fe22"
+    },
+    {
+      "path": "tests/test_kite_trace.py",
+      "bytes": 8538,
+      "sha256": "64e4e5008f570b2711e8592c44647d2351ce981bff228630439ef278859285a3"
+    },
+    {
+      "path": "tests/test_multi_trace.py",
+      "bytes": 1184,
+      "sha256": "54eae8de4c986c3b5c84df0a0cdab585b84e4119d4c69c614f55b7c95ab0aadf"
+    },
+    {
+      "path": "tests/test_workload_baseline.py",
+      "bytes": 3423,
+      "sha256": "a23e4ff6a896900ff6534828fa28b9589ab5fa7107bd9998070c2e66f2fe92a6"
+    },
+    {
+      "path": "tests/test_kite_controller.py",
+      "bytes": 6038,
+      "sha256": "ac3a723481d4cea631e235d7c501b684785201f79d1469294a451ab4693dda11"
+    },
+    {
+      "path": "docs/WORKLOAD_BASELINE_GUIDE.md",
+      "bytes": 5110,
+      "sha256": "6bd2eecf6a1c07ecc9ecf8078cab766af110851fb11854a2046fa629f6f85028"
+    },
+    {
+      "path": "docs/KITE_RUNTIME_STATUS.md",
+      "bytes": 4412,
+      "sha256": "390b575106b26e9e3bbc5d52c4dce3a3e23b73f2a5b4086b98e5c7d407fa3ea3"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_files": 27,
+  "python_ast_files": 24,
+  "extracted": "D:\\moe inference\\tmp\\kite-advantage-v2-verify-qjeots3_\\kite-advantage-20261016-v2",
+  "manifest": {
+    "status": "passed",
+    "files": 27,
+    "name": "kite-advantage-20261016-v2",
+    "manifest_sha256": "9f33ce67e53eb01784679447dab073b8d5f5ce10aa99ed5042a92853fdb387cc"
+  },
+  "zip_bytes": 102259,
+  "zip_sha256": "61360472372821c5034410788d7f330de8face50e0c751f9aa57e9dae9fb2fb7",
+  "standalone_tests": 77,
+  "scope": "Local Python and NumPy mocked-backend tests, not CUDA validation"
+}

@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "run": "D:\\moe inference\\results\\expert-cache-20261016T010846Z-97c656dc",
+  "costs": {
+    "upload_ms": 0.5872835333333334,
+    "cpu_intercept_ms": 0.17977460138713752,
+    "cpu_slope_ms": 0.03809534136191677,
+    "fixed_cpu_ms": 0.7004109333333334,
+    "min_q": 1,
+    "max_q": 32
+  },
+  "scenarios": [
+    {
+      "scenario": "upload_lru",
+      "calls": 12,
+      "misses": 8,
+      "upload": 8,
+      "hits": 4,
+      "invocation_wall_ms": 5.469023,
+      "inclusive_wall_ms": 84.470448
+    },
+    {
+      "scenario": "cpu_bypass",
+      "calls": 12,
+      "misses": 12,
+      "cpu": 12,
+      "invocation_wall_ms": 12.785776000000002,
+      "inclusive_wall_ms": 83.082317
+    },
+    {
+      "scenario": "fixed_cost",
+      "calls": 12,
+      "misses": 8,
+      "upload": 8,
+      "hits": 4,
+      "invocation_wall_ms": 5.414966,
+      "inclusive_wall_ms": 75.500195
+    },
+    {
+      "scenario": "affine_cost",
+      "calls": 12,
+      "misses": 9,
+      "cpu": 8,
+      "upload": 1,
+      "hits": 3,
+      "invocation_wall_ms": 4.789610999999999,
+      "inclusive_wall_ms": 75.24123
+    },
+    {
+      "scenario": "resize_acceptance",
+      "calls": 12,
+      "misses": 10,
+      "upload": 10,
+      "hits": 2,
+      "invocation_wall_ms": 6.361238999999999,
+      "inclusive_wall_ms": 161.12687
+    }
+  ],
+  "checked_calls": 60,
+  "checked_calibration_rows": 48,
+  "worst_relative_l2": 0.00407001655548811,
+  "worst_normalized_max_abs": 0.005494505632668734,
+  "complete_job_wall_ms": 6810.704906,
+  "calibration_inclusive_wall_ms": 304.760448,
+  "cuda_peak_allocated_bytes": 38798336,
+  "raw_sha256": {
+    "calibration.json": "7f93b9e2603571464361bfabf988531b8c3bada987cd136ae8c489b9b4bb1545",
+    "calibration.jsonl": "8be7257e12870cead74d101510beb7b33454facfbf084b22cf31992d8b948d41",
+    "events.jsonl": "d83fb3e71d0954ab38f1d9c89c6c9cd7e11b1ac5dd0f5ed5960c1a312f4ae96a",
+    "summary.json": "e998f35c9e8097f6c4085fcafc1638e786096a834c2f786a221800eac33895c5"
+  },
+  "limitation": "Functional acceptance only: synthetic order, one run, reference uploads between calls; no KITE/WISP performance conclusion."
+}

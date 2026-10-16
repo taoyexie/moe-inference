@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_files": 30,
+  "standalone_tests": 80,
+  "formal_v2_files_byte_identical": 27,
+  "zip_sha256": "a4e2c8436baf0abd9fa3c51427af4c33a72c75f035fbeaafd87daef8161e048c",
+  "zip_bytes": 110721,
+  "extracted": "D:\\moe inference\\tmp\\projection-probe-verify-n9tdc9df\\kite-projection-probe-20261016-v1",
+  "scope": "local bookkeeping tests; first-layer GPU probe not run"
+}

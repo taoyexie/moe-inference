@@ -1,0 +1,388 @@
+{
+  "status": "audited_diagnostic_only_not_correctness_pass",
+  "source_bundle_manifest_sha256": "9f040c07cd6321b6e89830fe72279db3c173cc183606f7dbf13aea1e1d7140ca",
+  "monitor_samples": 605,
+  "recorded_native_and_paged_comparisons_identical": true,
+  "stages_per_comparison": 772,
+  "routes_per_comparison": 96,
+  "all_next_token_argmax_equal": true,
+  "comparisons": {
+    "packed_full_serial_vs_stock_full": {
+      "logits": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "normalized_max_abs": 0.0
+      },
+      "per_request": [
+        {
+          "request": "decode",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "request": "prefill",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ],
+      "argmax_equal": true,
+      "first_nonzero_stage": null,
+      "first_changed_route": null,
+      "first_layer_attention": [
+        {
+          "tensor": "decode/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/output",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/output",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ]
+    },
+    "stock_cached_serial_vs_stock_full": {
+      "logits": {
+        "relative_l2": 0.031335413455963135,
+        "max_abs": 0.625,
+        "normalized_max_abs": 0.02777777798473835
+      },
+      "per_request": [
+        {
+          "request": "decode",
+          "relative_l2": 0.04469846934080124,
+          "max_abs": 0.625,
+          "normalized_max_abs": 0.02777777798473835
+        },
+        {
+          "request": "prefill",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ],
+      "argmax_equal": true,
+      "first_nonzero_stage": "L00/v_proj/decode",
+      "first_changed_route": "L11/router/decode",
+      "first_layer_attention": [
+        {
+          "tensor": "decode/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/output",
+          "relative_l2": 1.7030290564434836e-06,
+          "max_abs": 4.76837158203125e-07,
+          "normalized_max_abs": 7.07653998688329e-06
+        },
+        {
+          "tensor": "decode/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/value",
+          "relative_l2": 4.75558920243202e-07,
+          "max_abs": 2.384185791015625e-07,
+          "normalized_max_abs": 2.4785849745967425e-06
+        },
+        {
+          "tensor": "prefill/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/output",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ]
+    },
+    "packed_cached_serial_vs_stock_full": {
+      "logits": {
+        "relative_l2": 0.031335413455963135,
+        "max_abs": 0.625,
+        "normalized_max_abs": 0.02777777798473835
+      },
+      "per_request": [
+        {
+          "request": "decode",
+          "relative_l2": 0.04469846934080124,
+          "max_abs": 0.625,
+          "normalized_max_abs": 0.02777777798473835
+        },
+        {
+          "request": "prefill",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ],
+      "argmax_equal": true,
+      "first_nonzero_stage": "L00/v_proj/decode",
+      "first_changed_route": "L11/router/decode",
+      "first_layer_attention": [
+        {
+          "tensor": "decode/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/output",
+          "relative_l2": 1.7030290564434836e-06,
+          "max_abs": 4.76837158203125e-07,
+          "normalized_max_abs": 7.07653998688329e-06
+        },
+        {
+          "tensor": "decode/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/value",
+          "relative_l2": 4.75558920243202e-07,
+          "max_abs": 2.384185791015625e-07,
+          "normalized_max_abs": 2.4785849745967425e-06
+        },
+        {
+          "tensor": "prefill/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/output",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ]
+    },
+    "packed_cached_mixed_vs_stock_full": {
+      "logits": {
+        "relative_l2": 0.048164647072553635,
+        "max_abs": 1.03125,
+        "normalized_max_abs": 0.04583333432674408
+      },
+      "per_request": [
+        {
+          "request": "decode",
+          "relative_l2": 0.06521818786859512,
+          "max_abs": 1.03125,
+          "normalized_max_abs": 0.04583333432674408
+        },
+        {
+          "request": "prefill",
+          "relative_l2": 0.02124415896832943,
+          "max_abs": 0.324462890625,
+          "normalized_max_abs": 0.015543132089078426
+        }
+      ],
+      "argmax_equal": true,
+      "first_nonzero_stage": "L00/attention/decode",
+      "first_changed_route": "L02/router/decode",
+      "first_layer_attention": [
+        {
+          "tensor": "decode/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/output",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/output",
+          "relative_l2": 1.266289473278448e-05,
+          "max_abs": 1.52587890625e-05,
+          "normalized_max_abs": 0.00016447369125671685
+        },
+        {
+          "tensor": "prefill/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ]
+    },
+    "packed_cached_mixed_vs_serial": {
+      "logits": {
+        "relative_l2": 0.05793891102075577,
+        "max_abs": 1.21875,
+        "normalized_max_abs": 0.0544692724943161
+      },
+      "per_request": [
+        {
+          "request": "decode",
+          "relative_l2": 0.08030231297016144,
+          "max_abs": 1.21875,
+          "normalized_max_abs": 0.0544692724943161
+        },
+        {
+          "request": "prefill",
+          "relative_l2": 0.02124415896832943,
+          "max_abs": 0.324462890625,
+          "normalized_max_abs": 0.015543132089078426
+        }
+      ],
+      "argmax_equal": true,
+      "first_nonzero_stage": "L00/v_proj/decode",
+      "first_changed_route": "L02/router/decode",
+      "first_layer_attention": [
+        {
+          "tensor": "decode/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/output",
+          "relative_l2": 1.7030290564434836e-06,
+          "max_abs": 4.76837158203125e-07,
+          "normalized_max_abs": 7.07653998688329e-06
+        },
+        {
+          "tensor": "decode/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "decode/value",
+          "relative_l2": 4.75558920243202e-07,
+          "max_abs": 2.384185791015625e-07,
+          "normalized_max_abs": 2.4785849745967425e-06
+        },
+        {
+          "tensor": "prefill/query",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/output",
+          "relative_l2": 1.266289473278448e-05,
+          "max_abs": 1.52587890625e-05,
+          "normalized_max_abs": 0.00016447369125671685
+        },
+        {
+          "tensor": "prefill/key",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        },
+        {
+          "tensor": "prefill/value",
+          "relative_l2": 0.0,
+          "max_abs": 0.0,
+          "normalized_max_abs": 0.0
+        }
+      ]
+    }
+  },
+  "raw_sha256": {
+    "gpu_monitor_startup.json": "f682edc60c575de3f9fbf7f29dbcba395ab1e7c8a29d316d8468bc85f6431657",
+    "numerical_diagnostic.json": "c3a912f80b0d5a37051598fcca63feb9f6d44432e336df307455cb5ec917dc75",
+    "readiness.json": "f9f1c1cdf329ef4466e89ed5fb5e9cd4fd48d4f128e69bffeb4670db6de013ff",
+    "resource_monitor.json": "eb72beac3924c32b2d007d65da100f53a19afc60f9a109db2319207e5f3bf289",
+    "summary.json": "7743d829a51e8b45f25082a08c2bf1b4fa5822fa0bc26a5420f9b4a1ab649c90"
+  }
+}

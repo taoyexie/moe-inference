@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "run": "D:\\moe inference\\results\\expert-cache-bench-20261016T012157Z-3d019646",
+  "cases": {
+    "mixed_q_pressure": {
+      "pairs": 10,
+      "fixed_mean_execution_ms": 85.947891,
+      "affine_mean_execution_ms": 46.7750153,
+      "paired_savings_mean": 0.45571192545508143,
+      "paired_savings_median": 0.4596489878361163,
+      "paired_savings_min": 0.4085225023144473,
+      "paired_savings_max": 0.47019185458474955,
+      "affine_faster_pairs": 10,
+      "note": "Paired repetitions within one process; not independent users or machines.",
+      "ratio_of_means_savings": 0.4557747170317419,
+      "speedup_ratio_of_means": 1.8374743535359144,
+      "fixed_counts": {
+        "calls": 192,
+        "misses": 192,
+        "upload": 192
+      },
+      "affine_counts": {
+        "calls": 192,
+        "misses": 129,
+        "upload": 1,
+        "cpu": 128,
+        "hits": 63
+      },
+      "setup_execution_teardown_means_ms": {
+        "fixed": 140.5479148,
+        "calibrated": 100.5436702
+      },
+      "conservative_calibration_payback_passes": 6
+    },
+    "small_q_pressure": {
+      "pairs": 10,
+      "fixed_mean_execution_ms": 85.3593195,
+      "affine_mean_execution_ms": 60.144989,
+      "paired_savings_mean": 0.29535140502027685,
+      "paired_savings_median": 0.2967225531193273,
+      "paired_savings_min": 0.26175185317259875,
+      "paired_savings_max": 0.30893050266890565,
+      "affine_faster_pairs": 10,
+      "note": "Paired repetitions within one process; not independent users or machines.",
+      "ratio_of_means_savings": 0.2953904816450651,
+      "speedup_ratio_of_means": 1.4192257895333558,
+      "fixed_counts": {
+        "calls": 192,
+        "misses": 192,
+        "upload": 192
+      },
+      "affine_counts": {
+        "calls": 192,
+        "misses": 192,
+        "cpu": 192
+      },
+      "setup_execution_teardown_means_ms": {
+        "fixed": 140.339913,
+        "calibrated": 114.0915991
+      },
+      "conservative_calibration_payback_passes": 9
+    },
+    "stable_hot_control": {
+      "pairs": 10,
+      "fixed_mean_execution_ms": 23.098921,
+      "affine_mean_execution_ms": 23.0659113,
+      "paired_savings_mean": 0.001415601558806534,
+      "paired_savings_median": 0.0007759863573638115,
+      "paired_savings_min": -0.004011975377059551,
+      "paired_savings_max": 0.006266587701361015,
+      "affine_faster_pairs": 6,
+      "note": "Paired repetitions within one process; not independent users or machines.",
+      "ratio_of_means_savings": 0.0014290580932330155,
+      "speedup_ratio_of_means": 1.001431103222876,
+      "fixed_counts": {
+        "calls": 192,
+        "misses": 2,
+        "upload": 2,
+        "hits": 190
+      },
+      "affine_counts": {
+        "calls": 192,
+        "misses": 2,
+        "upload": 2,
+        "hits": 190
+      },
+      "setup_execution_teardown_means_ms": {
+        "fixed": 77.0100939,
+        "calibrated": 76.8363083
+      },
+      "conservative_calibration_payback_passes": 6850
+    }
+  },
+  "checked_passes": 66,
+  "formal_calls": 11520,
+  "detailed_events_checked": 1152,
+  "correctness_comparisons": 58,
+  "worst_relative_l2": 0.004227462690323591,
+  "worst_normalized_max_abs": 0.005494505632668734,
+  "calibration_ms": 226.088537,
+  "job_ms": 11161.022611,
+  "cost_model": {
+    "upload_ms": 0.48069280000000003,
+    "cpu_intercept_ms": 0.18019218625472888,
+    "cpu_slope_ms": 0.04178530832282472,
+    "fixed_cpu_ms": 0.7512580666666667,
+    "min_q": 1,
+    "max_q": 32
+  },
+  "raw_sha256": {
+    "calibration.json": "ca6692168d016e7c82177ff980b2778e3a84abb66250a90f606713b4a4b31687",
+    "calibration.jsonl": "e2eae37f595d9a8c4210e961fd85584bf42e53f3903c52bdd8905cc47da29083",
+    "correctness.json": "18756d43ffaf31bc407802526fe21ea4eb1c9fa29ac4b4b10a7756dc9cad4f10",
+    "passes.jsonl": "2aceef47fd6951e7cf4959c46a52e25e69a8778b7237438afce70e214eb3d30b",
+    "protocol.json": "ad22a56827a03ae47fdb313cc4cc75177712617ea2d4fafef9e3e633ad7cdb10",
+    "summary.json": "03916f6f8be72002d349cd4e455619af915301d12f125c6b210a1097fa0947b5"
+  },
+  "scope": "Selected controlled real-kernel expert-cache experiment; not full KITE, WiSP, P/D or KV evidence."
+}

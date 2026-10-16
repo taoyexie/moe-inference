@@ -1,0 +1,70 @@
+{
+  "name": "kite-expert-cache-20261016-v1",
+  "files": [
+    {
+      "path": "requirements-qwen.txt",
+      "sha256": "76464037e778bb3ca9145e5545580b594228e02ea11740e0dc0d04b65e8c5288",
+      "bytes": 242
+    },
+    {
+      "path": "scripts/kite_trace.py",
+      "sha256": "4baab3c6e83ea7f44560d0fb56b39b918e17dc875ae1a58b2b02d1362b45c3a0",
+      "bytes": 10772
+    },
+    {
+      "path": "scripts/qwen_smoke.py",
+      "sha256": "618d0bb33398262f630eef783b9079f1a0e24cc6fb62671b55526a7be083577a",
+      "bytes": 32370
+    },
+    {
+      "path": "scripts/expert_paths.py",
+      "sha256": "ab48db6b8d5836de0ac030d60f37f99a05c6a6ab208fe29ac22603fc9996aa81",
+      "bytes": 23720
+    },
+    {
+      "path": "scripts/kite_controller.py",
+      "sha256": "4a106526c728eea2e1aada47de4f5b4d26f371acae89c7d941535d433519fe22",
+      "bytes": 13499
+    },
+    {
+      "path": "scripts/expert_cache.py",
+      "sha256": "a4187a2a662d82b3c18393328012e42bea19ce917462c84a5ee016f19de8c2c7",
+      "bytes": 6854
+    },
+    {
+      "path": "scripts/expert_cache_smoke.py",
+      "sha256": "094ac157718f56c980d9017090cd1a90ce933357c5ceb87b1feb86081b5ccfab",
+      "bytes": 16289
+    },
+    {
+      "path": "tests/test_expert_cache.py",
+      "sha256": "91f4b0027686b8c73611a87610351833897ab54ae33eb1287933e2e8b573702a",
+      "bytes": 4836
+    },
+    {
+      "path": "tests/test_expert_cache_smoke.py",
+      "sha256": "98f7ad3e4534aa603765d28218707c607281476c429ec1fa6e0c481a0e4b5a74",
+      "bytes": 4376
+    },
+    {
+      "path": "tests/test_kite_controller.py",
+      "sha256": "ac3a723481d4cea631e235d7c501b684785201f79d1469294a451ab4693dda11",
+      "bytes": 6038
+    },
+    {
+      "path": "tests/test_expert_paths.py",
+      "sha256": "4b42e25d288e8bf7482c42062bad071bc54742c2e64b49730e7c93088869dffa",
+      "bytes": 4490
+    },
+    {
+      "path": "tests/test_kite_trace.py",
+      "sha256": "64e4e5008f570b2711e8592c44647d2351ce981bff228630439ef278859285a3",
+      "bytes": 8538
+    },
+    {
+      "path": "docs/EXPERT_CACHE_GUIDE.md",
+      "sha256": "22e332b4263b7edd045de95d8a90e3bf43bc25e4576712e44f269e0afad2826a",
+      "bytes": 5354
+    }
+  ]
+}

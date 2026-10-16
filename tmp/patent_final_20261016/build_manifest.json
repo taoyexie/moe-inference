@@ -1,0 +1,17 @@
+{
+  "source": "D:\\moe inference\\reports\\KITE专利技术交底书_待补实验数据.docx",
+  "source_sha256": "130384a04941891f7ec4f0dde883604f5abf595389a08a29dd665b15a04c21ee",
+  "output": "D:\\moe inference\\reports\\KITE专利技术交底书_终稿.docx",
+  "output_sha256": "457c4e4dd25526f33f45732b1529af5fb8e208cb93fd6792817716b14bb13e6d",
+  "original_figures_preserved": true,
+  "experimental_chart_version": "original zero-baseline bars",
+  "embedded_experimental_image_sha256": {
+    "01_e2e_latency.png": "95e4685ede1df352423f9d714cbd5487107cea4f19506b9696b0d9ae25c4d436",
+    "02_tpot.png": "3f410608df0473ea8ec79c2fc6ecf6a74c771e80a89fb3f5d1b9927e639b36c5",
+    "03_kv_restores.png": "82c19061a46dfe8e062dfa62adbc27b7b01f432d60bd72cb04a99588f299721a"
+  },
+  "images": 5,
+  "tables": 4,
+  "original_structure_preserved": true,
+  "raw_experiment_audit": "passed"
+}

@@ -1,0 +1,14 @@
+{
+  "source": "D:\\moe inference\\reports\\KITE专利技术交底书_终稿_baseline说明版.docx",
+  "source_sha256": "e179a94c85b571a2c350cae7e2e5f5b93c12bb5543276afa4e3c7474b7ac77a0",
+  "output": "D:\\moe inference\\reports\\KITE专利技术交底书_WiSP对照待测版.docx",
+  "output_sha256": "9f7094ed645efe48ed599236cec8b5667eaf33829764994fc86cba256dac65e3",
+  "comparison": "pending WiSP-style two fixed costs, history-only allocation",
+  "old_results_retained_and_labeled": true,
+  "images_byte_identical": true,
+  "results_table_numbers_unchanged": true,
+  "visual_review": "passed: all 17 page PNGs inspected; no clipping, overlap, broken tables or missing glyphs",
+  "rendered_pages": 17,
+  "render_directory": "D:/moe inference/tmp/patent_wisp_20261016/render_v1",
+  "render_backend": "native Word read-only PDF export and canonical skill rasterizer with bundled Poppler"
+}

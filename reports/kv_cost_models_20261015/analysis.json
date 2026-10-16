@@ -1,0 +1,143 @@
+{
+  "calibration_lengths": [
+    128,
+    512,
+    2048
+  ],
+  "validation_lengths": [
+    256,
+    1024
+  ],
+  "model": {
+    "restore_constant_ms": 0.6678933333333333,
+    "recompute_affine": {
+      "intercept_ms": 10059.380645833333,
+      "slope_ms_per_token": -0.3828380943080354
+    }
+  },
+  "predictions": [
+    {
+      "context_tokens": 128,
+      "role": "calibration",
+      "predicted_ms": {
+        "restore": 0.6678933333333333,
+        "recompute": 10010.377369761904
+      },
+      "measured_median_ms": {
+        "restore": 0.66863,
+        "recompute": 9973.348935
+      },
+      "relative_abs_errors": {
+        "restore": 0.0011017553305514376,
+        "recompute": 0.0037127383192177015
+      },
+      "model_choice": "restore",
+      "measured_faster_path": "restore"
+    },
+    {
+      "context_tokens": 256,
+      "role": "validation",
+      "predicted_ms": {
+        "restore": 0.6678933333333333,
+        "recompute": 9961.374093690476
+      },
+      "measured_median_ms": {
+        "restore": 0.666656,
+        "recompute": 8704.32048
+      },
+      "relative_abs_errors": {
+        "restore": 0.0018560296964751123,
+        "recompute": 0.14441720253508813
+      },
+      "model_choice": "restore",
+      "measured_faster_path": "restore"
+    },
+    {
+      "context_tokens": 512,
+      "role": "calibration",
+      "predicted_ms": {
+        "restore": 0.6678933333333333,
+        "recompute": 9863.36754154762
+      },
+      "measured_median_ms": {
+        "restore": 0.667053,
+        "recompute": 9909.653085
+      },
+      "relative_abs_errors": {
+        "restore": 0.0012597699633062618,
+        "recompute": 0.0046707531591032286
+      },
+      "model_choice": "restore",
+      "measured_faster_path": "restore"
+    },
+    {
+      "context_tokens": 1024,
+      "role": "validation",
+      "predicted_ms": {
+        "restore": 0.6678933333333333,
+        "recompute": 9667.354437261905
+      },
+      "measured_median_ms": {
+        "restore": 0.668867,
+        "recompute": 8889.482953
+      },
+      "relative_abs_errors": {
+        "restore": 0.0014556954770778801,
+        "recompute": 0.08750469384717033
+      },
+      "model_choice": "restore",
+      "measured_faster_path": "restore"
+    },
+    {
+      "context_tokens": 2048,
+      "role": "calibration",
+      "predicted_ms": {
+        "restore": 0.6678933333333333,
+        "recompute": 9275.328228690476
+      },
+      "measured_median_ms": {
+        "restore": 0.667997,
+        "recompute": 9266.07112
+      },
+      "relative_abs_errors": {
+        "restore": 0.00015519031772090754,
+        "recompute": 0.0009990327691846415
+      },
+      "model_choice": "restore",
+      "measured_faster_path": "restore"
+    }
+  ],
+  "validation_mape": {
+    "restore": 0.0016558625867764962,
+    "recompute": 0.11596094819112923
+  },
+  "positive_context_growth_supported": false,
+  "scope": "One process session, controlled nested prefixes, not allocator or end-to-end performance.",
+  "units": {
+    "restore": "ms per one 128-token all-layer 12 MiB transfer",
+    "recompute": "ms per full-prefix replay task, NOT an independent per-block penalty"
+  },
+  "runtime_extrapolation_allowed": false,
+  "selection": "Calibration/validation lengths specified before this scan; pilot lengths already inspected.",
+  "warning": "Negative fitted slope is retained, not clipped or reinterpreted as a physical speedup law.",
+  "source_file_sha256": {
+    "context-1024-reference.json": "90cd57b98485c5350b5ce644dd151d269340602bd169c0c0262eed83b08634f8",
+    "context-1024-source.safetensors": "b6f3c980330df84d73cdf14f297a8757efb17689d0c12d54fc12d0b341fbc00f",
+    "context-128-reference.json": "b36b3baf9dc792ba3c95fe91913bfae4abbcb7a53b12d2c88d4919ccd4ab4075",
+    "context-128-source.safetensors": "a14d909476281cffa986a1e3209a4b20dac4bf455df854abfc2e57c6e92c6123",
+    "context-2048-reference.json": "c4824dab6c83d07ba265f4600d6b20ea999d792fea6019ca979c6ce3091b3b04",
+    "context-2048-source.safetensors": "a36b7200abc2ddcb8d603f1d75559c036f80e994c833ae0a19f3be049b784cc9",
+    "context-256-reference.json": "9bc4c549f08dd9a524c95a4fa618815db29a77be20c660ff0aa35c2e0c19689e",
+    "context-256-source.safetensors": "9f9ca8d9d55103f9143838acb5d4ae36ef1e1a1cf08500d0a36463568e691077",
+    "context-512-reference.json": "fba56be3feeba9e36c536dbc66a873f69f8382939e297fb7056accd245e86631",
+    "context-512-source.safetensors": "2c6d299b4c3c099e785050f550a0c22b2d9a5a2e43719ab8928b7980a30c034f",
+    "device_map.json": "1611b4ffb30137356f3133e6fffe2da7ec8252919d0c4c33224d7dc3107730fb",
+    "inputs.json": "d03aa9afca3462554600a6bc53340c57831046bef53894474a1ed5f5d5d91919",
+    "loading_info.json": "a133dac4370b8c4579cf4d84ca70ef43205c16fb9790f2c67bce095b6879a341",
+    "model_config.json": "b3969ef2efbf64594540094e2209c690d36510cf2b64680c6f6d009d42eff484",
+    "raw.jsonl": "9ce019e403719e711c0a3126b41eb5f8f088807258fdd31adbb3e340e643cc14",
+    "resources_after_load.json": "2b05c7fbfc1d4a7f111c6dd6505ec7cf1f3487f35c344376f6a40ffe2098a3db",
+    "resources_before.json": "24a8cb295170c62a2f878eb80192e5c7d657c7742f5c48784dec815550cf4689",
+    "summary.json": "ca93705f38467910669b64a205bab5c22738786d64229775a02d5999a6e2e502"
+  }
+}

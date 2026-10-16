@@ -1,0 +1,150 @@
+{
+  "name": "kite-advantage-20261016-v3",
+  "files": [
+    {
+      "path": "requirements-qwen.txt",
+      "bytes": 242,
+      "sha256": "76464037e778bb3ca9145e5545580b594228e02ea11740e0dc0d04b65e8c5288"
+    },
+    {
+      "path": "scripts/kite_trace.py",
+      "bytes": 11235,
+      "sha256": "85c2da9f0d26451781f19546566a9d1a4741df41cf460ae0344df9785599ddd5"
+    },
+    {
+      "path": "scripts/qwen_smoke.py",
+      "bytes": 32370,
+      "sha256": "618d0bb33398262f630eef783b9079f1a0e24cc6fb62671b55526a7be083577a"
+    },
+    {
+      "path": "scripts/expert_paths.py",
+      "bytes": 23720,
+      "sha256": "ab48db6b8d5836de0ac030d60f37f99a05c6a6ab208fe29ac22603fc9996aa81"
+    },
+    {
+      "path": "scripts/multi_trace.py",
+      "bytes": 7023,
+      "sha256": "a076098e8bb8da692427d7d19b5c9994469c04bd99cbc98087d496c44c3ccfce"
+    },
+    {
+      "path": "scripts/workload_baseline.py",
+      "bytes": 10574,
+      "sha256": "414852397f722d70e1a348c32b39d5eda36a2ac818269a4902b0b3c30668e5f7"
+    },
+    {
+      "path": "scripts/kite_controller.py",
+      "bytes": 13872,
+      "sha256": "734d5a0cfb5f9e60492f8540fe46b5a1d3b3dc3ba02d7282de2416766ec43124"
+    },
+    {
+      "path": "scripts/kite_e2e_core.py",
+      "bytes": 7930,
+      "sha256": "43c8c95268f1847b01c90cc2a5973bc5455f7b00b210bbf466b6e71710e9fd5a"
+    },
+    {
+      "path": "scripts/kite_e2e_torch.py",
+      "bytes": 18586,
+      "sha256": "59bf11e0642e9796ceb76fbda762151c53740a81a576c85b5afac1437011e419"
+    },
+    {
+      "path": "scripts/kite_e2e_runtime.py",
+      "bytes": 22309,
+      "sha256": "afebd5a6bfff5d414600cc65c188b8dfc10d2ff1337cc9e6d766661f70a96430"
+    },
+    {
+      "path": "scripts/kite_e2e.py",
+      "bytes": 22546,
+      "sha256": "44c2436ac036e534fbbcd9b233ce93ae26f6eec8a5314e5c294fcf69ceaa435c"
+    },
+    {
+      "path": "scripts/audit_kite_e2e.py",
+      "bytes": 16446,
+      "sha256": "28a0f8775b1a4a97fb6e00509b185de24eeb03920ab490322979788cab7e1af8"
+    },
+    {
+      "path": "scripts/kite_advantage.py",
+      "bytes": 16271,
+      "sha256": "ed985ffdb45c287b3b9d0237a8eefc8b56ce4748350db06717fd3841a7e42d28"
+    },
+    {
+      "path": "scripts/audit_kite_advantage.py",
+      "bytes": 6287,
+      "sha256": "faab4183c570b27b662c06f9efbaa587eeefd7ec20a276f48f91f878e880da2f"
+    },
+    {
+      "path": "scripts/kite_readiness.py",
+      "bytes": 4786,
+      "sha256": "0010ebf3c81080ed71c5836bd65ac41ac36bd06c3ba6982aeacf64db7fdd5393"
+    },
+    {
+      "path": "tests/test_kite_e2e_core.py",
+      "bytes": 6901,
+      "sha256": "d3e6deab566c136221fb29aee58fcfcdbd02f2a3b6aa2c2e76d0b177ecc90f78"
+    },
+    {
+      "path": "tests/test_kite_e2e_layout.py",
+      "bytes": 12341,
+      "sha256": "0444eec326735896cd2a850804543bc8e4f5cfcafae68c12b2e483d51d850ca7"
+    },
+    {
+      "path": "tests/test_kite_e2e_driver.py",
+      "bytes": 5043,
+      "sha256": "6a2aa8c8adb47caafbdce1d10717471e9216b799187b5ca517a8708b25b2b938"
+    },
+    {
+      "path": "tests/test_kite_e2e_dispatch.py",
+      "bytes": 3474,
+      "sha256": "f7c96f92546a0d3addb639eac23e0867ee44f1843887ab522a94883899eaad7a"
+    },
+    {
+      "path": "tests/test_kite_advantage.py",
+      "bytes": 5530,
+      "sha256": "ad9ed9ec32d4aaf917fbb4106c98467dcd90ce4d608adafa8c16cd9116eb2783"
+    },
+    {
+      "path": "tests/test_kite_readiness.py",
+      "bytes": 8859,
+      "sha256": "1b76193cad0f411b5dd6fa190776a06d7fe4d7df43a9e13c40b00f609cfef885"
+    },
+    {
+      "path": "tests/test_kite_controller.py",
+      "bytes": 6038,
+      "sha256": "ac3a723481d4cea631e235d7c501b684785201f79d1469294a451ab4693dda11"
+    },
+    {
+      "path": "tests/test_kite_trace.py",
+      "bytes": 8538,
+      "sha256": "64e4e5008f570b2711e8592c44647d2351ce981bff228630439ef278859285a3"
+    },
+    {
+      "path": "tests/test_multi_trace.py",
+      "bytes": 1184,
+      "sha256": "54eae8de4c986c3b5c84df0a0cdab585b84e4119d4c69c614f55b7c95ab0aadf"
+    },
+    {
+      "path": "tests/test_workload_baseline.py",
+      "bytes": 3423,
+      "sha256": "a23e4ff6a896900ff6534828fa28b9589ab5fa7107bd9998070c2e66f2fe92a6"
+    },
+    {
+      "path": "tests/test_kite_performance_scope.py",
+      "bytes": 5232,
+      "sha256": "79daa26fa4d8b1026156c94512663ad8a84be295a38e5ba4d49a5bfa467bf678"
+    },
+    {
+      "path": "docs/KITE_ADVANTAGE_GUIDE.md",
+      "bytes": 10716,
+      "sha256": "4ac004bdc9b22dce77c089c7818e06d592a70d1e651fd7680236a95733a821d9"
+    },
+    {
+      "path": "docs/KITE_READY_TO_RUN.md",
+      "bytes": 4169,
+      "sha256": "3f0f942c2fa9c3679082f561cae73b7fa15c19beda1932b34d4e933bf3bb15c2"
+    },
+    {
+      "path": "docs/KITE_PERFORMANCE_RUN.md",
+      "bytes": 2933,
+      "sha256": "a5ccc455da5554fae49fe8672d0b1bb181dae4140a55b037b67905d8eb2452c5"
+    }
+  ]
+}

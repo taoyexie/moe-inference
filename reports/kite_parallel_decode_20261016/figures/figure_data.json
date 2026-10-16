@@ -1,0 +1,80 @@
+{
+  "scope": "single completed paired exploratory workload per budget, no independent repetitions or error bars",
+  "baseline": "fixed path costs plus historical curves; not original WiSP",
+  "e2e_scope": "pool initialization, startup calibration and complete generation including decisions/transfers/writes; model loading separate",
+  "tpot_scope": "mean per-request time between first and last output divided by 15, within one four-request workload; not independent trials",
+  "source_run": "D:\\moe inference\\results\\parallel-decode-search-20261016T132937Z-8668e263",
+  "audited": true,
+  "rows": [
+    {
+      "budget_gib": 6.0,
+      "mode": "baseline",
+      "e2e_s": 82.173739747,
+      "tpot_s": 1.5348270462666662,
+      "kv_restores": 4934,
+      "request_count": 4,
+      "output_tokens": 64,
+      "source": "D:\\moe inference\\results\\parallel-decode-search-20261016T132937Z-8668e263\\parallel-6g-6144-baseline"
+    },
+    {
+      "budget_gib": 6.0,
+      "mode": "kite",
+      "e2e_s": 75.348226898,
+      "tpot_s": 1.4030035256000004,
+      "kv_restores": 200,
+      "request_count": 4,
+      "output_tokens": 64,
+      "source": "D:\\moe inference\\results\\parallel-decode-search-20261016T132937Z-8668e263\\parallel-6g-6144-kite"
+    },
+    {
+      "budget_gib": 7.0,
+      "mode": "baseline",
+      "e2e_s": 78.091409246,
+      "tpot_s": 1.5411806139333335,
+      "kv_restores": 4934,
+      "request_count": 4,
+      "output_tokens": 64,
+      "source": "D:\\moe inference\\results\\parallel-decode-search-20261016T132937Z-8668e263\\parallel-7g-7168-baseline"
+    },
+    {
+      "budget_gib": 7.0,
+      "mode": "kite",
+      "e2e_s": 75.634015012,
+      "tpot_s": 1.3919963769999997,
+      "kv_restores": 179,
+      "request_count": 4,
+      "output_tokens": 64,
+      "source": "D:\\moe inference\\results\\parallel-decode-search-20261016T132937Z-8668e263\\parallel-7g-7168-kite"
+    }
+  ],
+  "raw_sha256": {
+    "gpu_monitor_startup.json": "80a7f1c123f8b4d166c22d796f60c5711fa9a31591ec9ceecf62f909e8f47d4e",
+    "parallel-6g-6144-baseline\\batches.jsonl": "91070681bf14079fd786d95ea8d37f3c64439e8fbd5f665c3eb430bcd7a7ff19",
+    "parallel-6g-6144-baseline\\calibration.json": "b37f69299ad0284b7c0ab51094ce249db75440cb4a997e8461614a55112fd373",
+    "parallel-6g-6144-baseline\\performance.json": "8e463c0395d7fdee615e41280978fbd6dba60df6f5d7edc38e417ab1f0819469",
+    "parallel-6g-6144-baseline\\recoveries.json": "289f538b75938f8a958a107667b648f5d91739ae999d45270c0a408aae24e0b4",
+    "parallel-6g-6144-baseline\\requests.json": "5024786198e574280ae8fcd36e18ef40f0d416ecc259d122475f8aadb6360ec4",
+    "parallel-6g-6144-kite\\batches.jsonl": "9eeb910300fb55d77cadeb31b0cf943751ad7446cc8278589df2206381f5a39c",
+    "parallel-6g-6144-kite\\calibration.json": "bb3e85005931ec4f3abed1ad334a397e1048b696546f1a02f1c5a8e92bfce9f7",
+    "parallel-6g-6144-kite\\performance.json": "80100e0467197bbd55dc028e0cd11d5c8c2645cfa0413a39878da94e34492ea6",
+    "parallel-6g-6144-kite\\recoveries.json": "b19d5fcd186507074046b80318edc3034a2f16eaf015a675c2f0c1cddad2055e",
+    "parallel-6g-6144-kite\\requests.json": "76b0bbea3b653a3d7e1bc476d0e47d35eae720cc34ef3a0aa8f35f7e2ce47b22",
+    "parallel-7g-7168-baseline\\batches.jsonl": "7792aeb1a23ad2b43f5d731b662af0ff52f1621e5a5998909243259d6b53a05d",
+    "parallel-7g-7168-baseline\\calibration.json": "96215599039d054238ceeb66339d1ba13a5d83fb28e0c9b4bb4ebbaba62e6121",
+    "parallel-7g-7168-baseline\\performance.json": "8fb88a72adb44aa426954e20cea27ff83312397f233731d4c44058a1878a5c7d",
+    "parallel-7g-7168-baseline\\recoveries.json": "615d7b1e458701489a6e996aca5d62f4d7beadcd4b88338cc4c37d9f74d625ec",
+    "parallel-7g-7168-baseline\\requests.json": "93de9c45a7c3fc26943687cb989fc470dc31d9cd12331a6ae133170cab684c5c",
+    "parallel-7g-7168-kite\\batches.jsonl": "475ac52d7b516e873151fcf0f1cff714235a2ec334bbbd441b6c06c4188d2958",
+    "parallel-7g-7168-kite\\calibration.json": "ef12b1942f34d7fd3eeb36730910c3154467e88f1f4bd627cd9e78ef9eefd2d9",
+    "parallel-7g-7168-kite\\performance.json": "e6341fbc9ac011da10e6c8ddd9a7e532d3a3f373912c9a0c4e1242fb7205b537",
+    "parallel-7g-7168-kite\\recoveries.json": "c40a402e2f7d66cebdebe7cc0afb756e026f60cd27baf16788874700179727cb",
+    "parallel-7g-7168-kite\\requests.json": "f1b9633715203efd7bef5b988a87835a7c4e47ff227e2cb035fc9e5c376333b8",
+    "readiness.json": "a46a2b43252c682aff4db0e7ab5e440a20f4fc62a34a664c9ef5d5b62c03d443",
+    "resource_monitor.json": "04e66f17184a68de8e922a8eb302bf1bbaf587af5130324a6751d55d4889016b",
+    "selection.json": "2f9273dcae26112915d3251ceb265106d3279321479159bef118d3be927c934e",
+    "structural_screen.json": "f28adef190a7b1f676ce0605a16fdeb077de18377678e9a9d4f41645ead0aa04",
+    "summary.json": "1e1468b5c95cfad0ad63b6b38654aadf0c8ab01e9cd28616b34f48ba9d7deac7",
+    "validation.json": "f0426c8d1f77e13a483cbb2bd7bcffb12f25df0557d42d12574b67359dddd6d0",
+    "workload.json": "322f89302498e9ed85e0a4ebaec78b1233d6014204d34bfdf0d155cc23dba980"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "status": "passed",
+  "run": "D:\\moe inference\\results\\qwen-20261016T003757Z-6ad1fee8",
+  "checked": "raw token timing, schedule, aggregation, workload hash, placement and wall-time consistency",
+  "evaluation_metrics": {
+    "ttft_ms": {
+      "n": 5,
+      "mean": 9834.0621018,
+      "median": 9807.533059,
+      "p10": 9562.0592472,
+      "p90": 10105.229769,
+      "min": 9433.670904,
+      "max": 10177.219277
+    },
+    "completion_ms": {
+      "n": 5,
+      "mean": 74885.7001522,
+      "median": 74819.645833,
+      "p10": 74346.6273772,
+      "p90": 75459.1740884,
+      "min": 74164.89662,
+      "max": 75646.400852
+    },
+    "tpot_ms": {
+      "n": 5,
+      "mean": 9293.091150057144,
+      "median": 9340.853561285714,
+      "p10": 9209.02990557143,
+      "p90": 9350.140831057144,
+      "min": 9193.909080142857,
+      "max": 9352.740225000001
+    },
+    "itl_ms": {
+      "n": 35,
+      "mean": 9293.091150057144,
+      "median": 9265.472289999998,
+      "p10": 8997.410185400002,
+      "p90": 9788.668687199997,
+      "min": 8846.256852999999,
+      "max": 10004.277354000002
+    }
+  },
+  "by_length": {
+    "128": {
+      "ttft_ms": {
+        "n": 1,
+        "mean": 9754.641762,
+        "median": 9754.641762,
+        "p10": 9754.641762,
+        "p90": 9754.641762,
+        "min": 9754.641762,
+        "max": 9754.641762
+      },
+      "completion_ms": {
+        "n": 1,
+        "mean": 75178.333943,
+        "median": 75178.333943,
+        "p10": 75178.333943,
+        "p90": 75178.333943,
+        "min": 75178.333943,
+        "max": 75178.333943
+      },
+      "tpot_ms": {
+        "n": 1,
+        "mean": 9346.241740142857,
+        "median": 9346.241740142857,
+        "p10": 9346.241740142857,
+        "p90": 9346.241740142857,
+        "min": 9346.241740142857,
+        "max": 9346.241740142857
+      },
+      "itl_ms": {
+        "n": 7,
+        "mean": 9346.241740142857,
+        "median": 9265.472289999998,
+        "p10": 9050.2726892,
+        "p90": 9755.444194200008,
+        "min": 8981.169587,
+        "max": 10004.277354000002
+      }
+    },
+    "512": {
+      "ttft_ms": {
+        "n": 2,
+        "mean": 9805.445090500001,
+        "median": 9805.445090500001,
+        "p10": 9508.0257413,
+        "p90": 10102.8644397,
+        "min": 9433.670904,
+        "max": 10177.219277
+      },
+      "completion_ms": {
+        "n": 2,
+        "mean": 75233.0233425,
+        "median": 75233.0233425,
+        "p10": 74902.3213349,
+        "p90": 75563.72535010001,
+        "min": 74819.645833,
+        "max": 75646.400852
+      },
+      "tpot_ms": {
+        "n": 2,
+        "mean": 9346.796893142859,
+        "median": 9346.796893142859,
+        "p10": 9342.042227657143,
+        "p90": 9351.551558628573,
+        "min": 9340.853561285714,
+        "max": 9352.740225000001
+      },
+      "itl_ms": {
+        "n": 14,
+        "mean": 9346.796893142859,
+        "median": 9315.2200655,
+        "p10": 9079.455825000003,
+        "p90": 9718.858128599999,
+        "min": 9035.283717000002,
+        "max": 9898.982697
+      }
+    },
+    "1024": {
+      "ttft_ms": {
+        "n": 2,
+        "mean": 9902.389283,
+        "median": 9902.389283,
+        "p10": 9826.5043038,
+        "p90": 9978.2742622,
+        "min": 9807.533059,
+        "max": 9997.245507
+      },
+      "completion_ms": {
+        "n": 2,
+        "mean": 74392.06006650001,
+        "median": 74392.06006650001,
+        "p10": 74210.3293093,
+        "p90": 74573.79082370001,
+        "min": 74164.89662,
+        "max": 74619.223513
+      },
+      "tpot_ms": {
+        "n": 2,
+        "mean": 9212.810111928571,
+        "median": 9212.810111928571,
+        "p10": 9197.6892865,
+        "p90": 9227.930937357143,
+        "min": 9193.909080142857,
+        "max": 9231.711143714287
+      },
+      "itl_ms": {
+        "n": 14,
+        "mean": 9212.810111928571,
+        "median": 9149.478976000002,
+        "p10": 8965.9416113,
+        "p90": 9612.338138399999,
+        "min": 8846.256852999999,
+        "max": 9923.076967
+      }
+    }
+  },
+  "warmup_requests": [
+    {
+      "ttft_ms": 165513.215298,
+      "completion_ms": 229114.129481,
+      "tpot_ms": 9085.844883285716,
+      "itl_ms": [
+        9008.38578099999,
+        8635.72150700001,
+        9117.486221,
+        9133.904267000005,
+        9024.793746999989,
+        9283.815649000026,
+        9396.807010999997
+      ],
+      "token_completion_offsets_ms": [
+        165513.215298,
+        174521.601079,
+        183157.322586,
+        192274.808807,
+        201408.713074,
+        210433.506821,
+        219717.32247,
+        229114.129481
+      ],
+      "output_tokens": 8,
+      "generated_token_ids": [
+        107083,
+        100643,
+        109151,
+        20412,
+        5122,
+        334,
+        104564,
+        113272
+      ],
+      "stop_reason": "max_new_tokens",
+      "forward_count": 8,
+      "decode_forward_count": 7,
+      "final_cache_length": 135,
+      "timing_scope": "pretokenized_CPU_input_to_first_or_last_token_id_ready_on_CPU; local batch=1",
+      "excludes": [
+        "tokenization",
+        "model_loading",
+        "server_queue",
+        "network",
+        "text_detokenization",
+        "post_generation_cache_cleanup"
+      ],
+      "includes": [
+        "input_H2D",
+        "all_model_execution_and_weight_offload",
+        "greedy_argmax",
+        "completion_synchronization"
+      ],
+      "request_id": "repeat-00-trace-128-systems",
+      "input_tokens": 128,
+      "topic": "systems",
+      "warmup": true,
+      "time_utc": "2026-10-16T00:44:48.502573+00:00",
+      "generated_text": "这段材料的主题是：**计算机推理"
+    }
+  ],
+  "load_seconds": 163.52048102766275,
+  "loaded_workload_seconds": 605.242708901,
+  "complete_job_seconds": 786.6988657840001,
+  "initial_gpu": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100-PCIE-40GB",
+      "total_bytes": 42949672960,
+      "used_bytes": 0,
+      "free_bytes": 42298507264,
+      "util_percent": 0
+    }
+  ],
+  "initial_gpu_processes": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "after_load_gpu": [
+    {
+      "index": 0,
+      "name": "NVIDIA A100-PCIE-40GB",
+      "total_bytes": 42949672960,
+      "used_bytes": 24755830784,
+      "free_bytes": 17542676480,
+      "util_percent": 0
+    }
+  ],
+  "layer_weight_placement": {
+    "0": 19,
+    "cpu": 29
+  },
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "raw_sha256": {
+    "device_map.json": "24c28fae02b72e84eca2759aec7beadb94f0690bcb8fceebf9272743115fc2c6",
+    "model_config.json": "b3969ef2efbf64594540094e2209c690d36510cf2b64680c6f6d009d42eff484",
+    "performance.json": "72ba745cd3b074125f438de37fc2d426b584b0113a601535de203413846a7a5a",
+    "request_metrics.jsonl": "2ce5b62983a7fb185af4810e52fcc70143124dc5f35339add4c6c6b36b7dce98",
+    "resources_after_load.json": "8e6767fabcdee73c67b5419ed15405d1eb497002b7f7b7d0ca9840856ab9fbfc",
+    "resources_before.json": "6b6ffbc7640a040b26839fda8804aad4e240f9b870a298883fa2b60cbb6eb9b0",
+    "summary.json": "b143c303644689d4bafe5dbbe9f9739e5e8b66c987be1ffa1712c5bdd9eb131d",
+    "workload.json": "002d90ccdcfb9c363a2498f88f728b342265790c896d190073a360d6ecb82091"
+  },
+  "limitations": [
+    "One controlled sequential run, five evaluation requests; not a mixed batch.",
+    "Existing HF/Accelerate weight offload, not WISP or KITE.",
+    "No continuous GPU/CPU isolation monitoring or inference memory peak record.",
+    "Warmup cause unprofiled; resource snapshots alone do not demonstrate exclusive use.",
+    "No observed physical cache miss counts or split-dependent end-to-end comparison.",
+    "Small unequal length groups; no generalization or confidence claim."
+  ]
+}

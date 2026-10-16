@@ -1,0 +1,80 @@
+{
+  "name": "kite-expert-cache-bench-20261016-v1",
+  "files": [
+    {
+      "path": "requirements-qwen.txt",
+      "bytes": 242,
+      "sha256": "76464037e778bb3ca9145e5545580b594228e02ea11740e0dc0d04b65e8c5288"
+    },
+    {
+      "path": "scripts/kite_trace.py",
+      "bytes": 10772,
+      "sha256": "4baab3c6e83ea7f44560d0fb56b39b918e17dc875ae1a58b2b02d1362b45c3a0"
+    },
+    {
+      "path": "scripts/qwen_smoke.py",
+      "bytes": 32370,
+      "sha256": "618d0bb33398262f630eef783b9079f1a0e24cc6fb62671b55526a7be083577a"
+    },
+    {
+      "path": "scripts/expert_paths.py",
+      "bytes": 23720,
+      "sha256": "ab48db6b8d5836de0ac030d60f37f99a05c6a6ab208fe29ac22603fc9996aa81"
+    },
+    {
+      "path": "scripts/kite_controller.py",
+      "bytes": 13499,
+      "sha256": "4a106526c728eea2e1aada47de4f5b4d26f371acae89c7d941535d433519fe22"
+    },
+    {
+      "path": "scripts/expert_cache.py",
+      "bytes": 6854,
+      "sha256": "5bbfeff7b826a254bc8ab45183633099b939b0a57b160d40d05ff32d1efbcdaa"
+    },
+    {
+      "path": "scripts/expert_cache_smoke.py",
+      "bytes": 16289,
+      "sha256": "094ac157718f56c980d9017090cd1a90ce933357c5ceb87b1feb86081b5ccfab"
+    },
+    {
+      "path": "scripts/expert_cache_bench.py",
+      "bytes": 10508,
+      "sha256": "1ba56c8af818263c9f61fd54d677cea4f5ea959805cce797da44529fc31e8084"
+    },
+    {
+      "path": "tests/test_expert_cache.py",
+      "bytes": 4836,
+      "sha256": "91f4b0027686b8c73611a87610351833897ab54ae33eb1287933e2e8b573702a"
+    },
+    {
+      "path": "tests/test_expert_cache_smoke.py",
+      "bytes": 4376,
+      "sha256": "98f7ad3e4534aa603765d28218707c607281476c429ec1fa6e0c481a0e4b5a74"
+    },
+    {
+      "path": "tests/test_expert_cache_bench.py",
+      "bytes": 3071,
+      "sha256": "7bb963b5e74ba3b8b037b4c7499b0e0dc743315613434259947263cc9c7ed6e7"
+    },
+    {
+      "path": "tests/test_kite_controller.py",
+      "bytes": 6038,
+      "sha256": "ac3a723481d4cea631e235d7c501b684785201f79d1469294a451ab4693dda11"
+    },
+    {
+      "path": "tests/test_expert_paths.py",
+      "bytes": 4490,
+      "sha256": "4b42e25d288e8bf7482c42062bad071bc54742c2e64b49730e7c93088869dffa"
+    },
+    {
+      "path": "tests/test_kite_trace.py",
+      "bytes": 8538,
+      "sha256": "64e4e5008f570b2711e8592c44647d2351ce981bff228630439ef278859285a3"
+    },
+    {
+      "path": "docs/EXPERT_CACHE_BENCH_GUIDE.md",
+      "bytes": 5546,
+      "sha256": "e4556680ed3a9fca19e51fe5aa3c2602e4cf37f1ec9d1ae057b59fa81158620a"
+    }
+  ]
+}

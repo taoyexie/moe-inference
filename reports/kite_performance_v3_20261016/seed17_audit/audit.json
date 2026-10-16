@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "run": "D:\\moe inference\\results\\kv-shock-search-20261016T120121Z-edf45a48",
+  "command": "search",
+  "seed": 17,
+  "budget_mib": 8192,
+  "baseline_ms": 204422.929719,
+  "kite_ms": 200604.297754,
+  "speedup": 1.019035643840905,
+  "reduction": 0.018680056930252875,
+  "outputs_identical": false,
+  "main_baseline_ms": 173928.910064,
+  "main_kite_ms": 172442.572052,
+  "accuracy_certified": false,
+  "numerical_policy": "performance_only",
+  "expert": {
+    "baseline": {
+      "expert_calls": 88683,
+      "expert_misses": 79345,
+      "expert_upload": 79345,
+      "expert_hits": 9338
+    },
+    "kite": {
+      "expert_calls": 88925,
+      "expert_misses": 88580,
+      "expert_cpu": 96,
+      "cpu_fp32_cache_hits": 96,
+      "expert_upload": 88484,
+      "expert_hits": 345
+    }
+  },
+  "kv": {
+    "baseline": {
+      "split_evictions": 1092,
+      "kv_read_pages": 18700,
+      "kv_hits": 4012,
+      "kv_misses": 14688,
+      "kv_restore_pages": 14688
+    },
+    "kite": {
+      "split_evictions": 1820,
+      "kv_read_pages": 18700,
+      "kv_hits": 18226,
+      "kv_misses": 474,
+      "kv_restore_pages": 474
+    }
+  },
+  "scope": "selected controlled long-context KV shock; all startup costs included; no independent module attribution",
+  "raw_sha256": {
+    "8192-baseline\\batches.jsonl": "3829303c18f56f183a4a058c2654f5eaa14deb4b69f4836d79f5ee98a35d3eda",
+    "8192-baseline\\calibration.json": "5bd6eb14f5bacd8310a1f3b18a838dfa18fdcfefd033f3a5781b80966f7ec8f4",
+    "8192-baseline\\performance.json": "9743a32e81449e86190962ca820c4babe4b1f000bde05522cb70ae6fb7b6cb76",
+    "8192-baseline\\recoveries.json": "5211c06705cec68575a8459abb57f1aea619d1372b0fe811f8d3fd92e03e0b42",
+    "8192-baseline\\requests.json": "bc601eb68752e721571c4d917e237e5dee34c5077024181e54a9e2ad1788cabd",
+    "8192-kite\\batches.jsonl": "54044e15be68b7e66a2617e9bf51d0adbecf83c4e3f9773ae4d882bcafcdfc87",
+    "8192-kite\\calibration.json": "a7c193cf0c06e6d087ced90047ca5f6a20eb8024f947d0da177f9fd7e1ce01b1",
+    "8192-kite\\performance.json": "abdb0bcc5601e35e7bd691bb92eafaef38758dbbcbb93df1bbf70cab10173942",
+    "8192-kite\\recoveries.json": "590fd42bf9559b01ef920c31ff9e5e6f892d1902bb1736bc01fbeb50e5f5ed56",
+    "8192-kite\\requests.json": "629bc88d9c04ee0eae726dbebd11f6b2196017d84f0831a4a086c5147b5a4455",
+    "gpu_monitor_startup.json": "bb9e89c4852c47bad03e203a8bad3610cec4514119a37324a78078d1d1a304e8",
+    "readiness.json": "238ab95784257c355bfdc34a9258db76dbbe93e4e2a78caec01a47f0850f0381",
+    "resource_monitor.json": "8fac32410f1d8cf5a8e0286fb8dcbead7ab240c49cd6f485ec4f09bc0f4d84e7",
+    "selection.json": "b7b6ca88675b16edcd5b4dd952350df55066b97c1c7d6f493ec03411bc953473",
+    "structural_screen.json": "e681626932f46a251e14847d80d338d4990b622b34d93581e54afb95234cced9",
+    "summary.json": "b09f10bb413e400814069f936c71d4222b8daf8edaccd7fc25ee4f78a03c99da",
+    "validation.json": "f0426c8d1f77e13a483cbb2bd7bcffb12f25df0557d42d12574b67359dddd6d0",
+    "workload.json": "65e4484cfb9da92c81ae9dff22bd6a70083a56ea0e6dd153539983b8229fbffc"
+  }
+}

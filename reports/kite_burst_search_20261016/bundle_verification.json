@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source_files": 33,
+  "standalone_tests": 87,
+  "zip_sha256": "6bd7b291d28af1d906e51e1ef5ec8bfa94c2f8b018c6e5cbdfce127b79a09c61",
+  "zip_bytes": 120248,
+  "extracted": "D:\\moe inference\\tmp\\burst-search-verify-vef9tl8w\\kite-burst-search-20261016-v1",
+  "scope": "local scheduling/control-flow/LRU checks only; no new E2E result"
+}
